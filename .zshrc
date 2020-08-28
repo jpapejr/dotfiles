@@ -102,3 +102,18 @@ export ZSH_AUTOSUGGEST_USE_ASYNC=true
 #
 ZSH_AUTOSUGGEST_STRATEGY=(history completion)
 autoload -U compinit && compinit
+
+source <(oc completion zsh)
+
+alias gps='gopass show -c'
+alias iks='ibmcloud ks'
+alias icr='ibmcloud cr'
+alias isa='ibmcloud sat'
+alias k='kubectl'
+alias kns='kubectl -n $NS'
+alias ctx='kubectl config get-contexts'
+alias clusters='ibmcloud ks cluster ls'
+
+function ns {
+	export NS=$1
+}
