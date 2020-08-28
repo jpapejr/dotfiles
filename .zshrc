@@ -106,6 +106,7 @@ autoload -U compinit && compinit
 source <(oc completion zsh)
 
 alias gps='gopass show -c'
+alias ic='ibmcloud'
 alias iks='ibmcloud ks'
 alias icr='ibmcloud cr'
 alias isa='ibmcloud sat'
