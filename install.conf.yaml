@@ -8,6 +8,6 @@
     ~/.zshrc:
       force: true
       path: .zshrc
-    ~/.config/starship.toml
+    ~/.config/starship.toml:
       force: true
       path: starship.toml
