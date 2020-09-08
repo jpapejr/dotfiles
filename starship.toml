@@ -1,0 +1,24 @@
+[cmd_duration]
+min_time = 500
+prefix = "ran for "
+
+[hostname]
+ssh_only = false
+prefix = "⟪"
+suffix = "⟫"
+
+[kubernetes]
+symbol = "☸ "
+style = "dimmed red"
+disabled = false
+
+[time]
+disabled = false
+format = "🕙[ %T ]"
+utc_time_offset = "-5"
+
+[character]
+symbol = "➜"
+error_symbol = "✗"
+use_symbol_for_status = true
+
