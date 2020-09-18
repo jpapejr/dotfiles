@@ -11,3 +11,6 @@
     ~/.config/starship.toml:
       force: true
       path: starship.toml
+    ~/.tmux.conf:
+      force: true
+      path: .tmux.conf
