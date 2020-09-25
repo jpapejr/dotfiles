@@ -125,7 +125,7 @@ function vmip {
 }
 
 function ssht { 
-	ssh root@$(vmip $1) -t "sh -c 'tmux a ssh_session || tmux new -s ssh_session'"
+	ssh root@$(vmip $1) -t "sh -c 'tmux a -t ssh_session || tmux new -s ssh_session'"
 }
 
 
