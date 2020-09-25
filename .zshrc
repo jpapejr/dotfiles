@@ -119,4 +119,8 @@ function ns {
 	export NS=$1
 }
 
+function vmip {
+	ibmcloud sl vs list --output json | jq ".[] | select( .hostname == \"$1\") | (.primaryBackendIpAddress)" -r
+}
+
 eval "$(starship init zsh)"
