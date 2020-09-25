@@ -114,6 +114,7 @@ alias k='kubectl'
 alias kns='kubectl -n $NS'
 alias ctx='kubectl config get-contexts'
 alias clusters='ibmcloud ks cluster ls'
+alias vms='ibmcloud sl vs list'
 
 function ns {
 	export NS=$1
