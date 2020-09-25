@@ -124,4 +124,9 @@ function vmip {
 	ibmcloud sl vs list --output json | jq ".[] | select( .hostname == \"$1\") | (.primaryIpAddress)" -r
 }
 
+function ssht { 
+	ssh root@$(vmip $1) -t "sh -c 'tmux a ssh_session || tmux new -s ssh_session'"
+}
+
+
 eval "$(starship init zsh)"
