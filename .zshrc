@@ -130,7 +130,11 @@ function ssht {
 
 function coderpass {
 	ssh root@$(vmip $1) cat /home/coder/pw.txt
- }
+}
+
+function tmuxify {
+	scp ~/.tmux.conf root@$(vmip $1):/root
+}
 
 
 eval "$(starship init zsh)"
