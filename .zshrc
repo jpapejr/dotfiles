@@ -128,5 +128,9 @@ function ssht {
 	ssh root@$(vmip $1) -t "sh -c 'tmux a -t ssh_session || tmux new -s ssh_session'"
 }
 
+function coderpass {
+	ssh root@$(vmip $1) cat /home/coder/pw.txt
+ }
+
 
 eval "$(starship init zsh)"
