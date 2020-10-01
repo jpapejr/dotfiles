@@ -134,6 +134,8 @@ function coderpass {
 
 function tmuxify {
 	scp ~/.tmux.conf root@$(vmip $1):/root
+	ssh root@$(vmip $1) cat /home/coder/pw.txt
+	ssh-copy-id coder@$(vmip $1)
 }
 
 
