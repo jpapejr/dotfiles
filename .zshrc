@@ -114,14 +114,16 @@ alias k='kubectl'
 alias kns='kubectl -n $NS'
 alias ctx='kubectl config get-contexts'
 alias clusters='ibmcloud ks cluster ls'
-alias vms='ibmcloud sl vs list'
+alias vms='ibmcloud is ins'
+alias vpc='ibmcloud is'
 
 function ns {
 	export NS=$1
 }
 
 function vmip {
-	ibmcloud sl vs list --output json | jq ".[] | select( .hostname == \"$1\") | (.primaryIpAddress)" -r
+	#ibmcloud sl vs list --output json | jq ".[] | select( .hostname == \"$1\") | (.primaryIpAddress)" -r
+	ibmcloud is instances --output json | jq ".[] | select( .name == \"$1\") | (.network_interfaces[].floating_ips[].address)" -r
 }
 
 function ssht { 
@@ -131,6 +133,10 @@ function ssht {
 function coderpass {
 	ssh root@$(vmip $1) cat /home/coder/pw.txt
 }
+
+function bootstrap {
+	 ssh root@$(vmip $1) "curl -vv https://s3.us-east.cloud-object-storage.appdomain.cloud/bootstrap-scripts/bootstrap_$2.sh"
+ }
 
 function tmuxify {
 	scp ~/.tmux.conf root@$(vmip $1):/root
