@@ -116,6 +116,7 @@ alias ctx='kubectl config get-contexts'
 alias clusters='ibmcloud ks cluster ls'
 alias vms='ibmcloud is ins'
 alias vpc='ibmcloud is'
+alias ics='ibmcloud schematics'
 
 function ns {
 	export NS=$1
@@ -135,7 +136,7 @@ function coderpass {
 }
 
 function bootstrap {
-	 ssh root@$(vmip $1) "curl -vv https://s3.us-east.cloud-object-storage.appdomain.cloud/bootstrap-scripts/bootstrap_$2.sh"
+	 ssh root@$(vmip $1) "curl -vv https://s3.us-east.cloud-object-storage.appdomain.cloud/bootstrap-scripts/bootstrap_$2.sh | bash"
  }
 
 function tmuxify {
