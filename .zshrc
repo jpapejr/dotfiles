@@ -117,6 +117,7 @@ alias clusters='ibmcloud ks cluster ls'
 alias vms='ibmcloud is ins'
 alias vpc='ibmcloud is'
 alias ics='ibmcloud schematics'
+alias svcs='ibmcloud resource service-instances --output json | jq ".[] | {name: .name, type: .crn}" -c'
 
 function ns {
 	export NS=$1
