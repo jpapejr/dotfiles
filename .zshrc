@@ -117,7 +117,8 @@ alias clusters='ibmcloud ks cluster ls'
 alias vms='ibmcloud is ins'
 alias vpc='ibmcloud is'
 alias ics='ibmcloud schematics'
-alias svcs='ibmcloud resource service-instances --output json | jq ".[] | {name: .name, type: .crn}" -c'
+alias svcs="ibmcloud resource service-instances --output json | jq '.[] | {name: .name, type: .crn | split(\":\")}' -c"
+alias rg="ibmcloud target | awk '/.*Resource group.*/ { print $3}'"
 
 function ns {
 	export NS=$1
