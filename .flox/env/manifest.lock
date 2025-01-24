@@ -5,6 +5,13 @@
     "install": {
       "podman": {
         "pkg-path": "podman"
+      },
+      "raycast": {
+        "pkg-path": "raycast",
+        "systems": [
+          "aarch64-darwin",
+          "x86_64-darwin"
+        ]
       }
     },
     "vars": {
@@ -147,6 +154,64 @@
         "out": "/nix/store/5prdc9zp2bpn23ifn0k1prwn8776nxg2-podman-5.3.1"
       },
       "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "raycast",
+      "broken": false,
+      "derivation": "/nix/store/a33fkvy584k375k51zfys3dha81rrzlc-raycast-1.89.0.drv",
+      "description": "Control your tools with a few keystrokes",
+      "install_id": "raycast",
+      "license": "Unfree",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
+      "name": "raycast-1.89.0",
+      "pname": "raycast",
+      "rev": "9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
+      "rev_count": 742084,
+      "rev_date": "2025-01-21T14:28:11Z",
+      "scrape_date": "2025-01-23T00:15:48Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": true,
+      "version": "1.89.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/vk4j8ns8irrq912lwy95av363ww2f75l-raycast-1.89.0"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "raycast",
+      "broken": false,
+      "derivation": "/nix/store/hkx4cbi1w92dg9bxd43wh4cg353f3nfx-raycast-1.89.0.drv",
+      "description": "Control your tools with a few keystrokes",
+      "install_id": "raycast",
+      "license": "Unfree",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
+      "name": "raycast-1.89.0",
+      "pname": "raycast",
+      "rev": "9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
+      "rev_count": 742084,
+      "rev_date": "2025-01-21T14:28:11Z",
+      "scrape_date": "2025-01-23T00:15:48Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": true,
+      "version": "1.89.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/xasghrybmlmz32xw2l35wppbr7xy5wa5-raycast-1.89.0"
+      },
+      "system": "x86_64-darwin",
       "group": "toplevel",
       "priority": 5
     }
