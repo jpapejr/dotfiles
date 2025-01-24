@@ -3,11 +3,17 @@
   "manifest": {
     "version": 1,
     "install": {
+      "_1password-cli": {
+        "pkg-path": "_1password-cli"
+      },
       "gitui": {
         "pkg-path": "gitui"
       },
       "helix": {
         "pkg-path": "helix"
+      },
+      "lima": {
+        "pkg-path": "lima"
       },
       "podman": {
         "pkg-path": "podman"
@@ -18,6 +24,9 @@
           "aarch64-darwin",
           "x86_64-darwin"
         ]
+      },
+      "xz": {
+        "pkg-path": "xz"
       }
     },
     "vars": {
@@ -42,6 +51,122 @@
     }
   },
   "packages": [
+    {
+      "attr_path": "_1password-cli",
+      "broken": false,
+      "derivation": "/nix/store/xdxs54v1jskb97rhhsfsi74mcs7s69y7-1password-cli-2.30.3.drv",
+      "description": "1Password command-line tool",
+      "install_id": "_1password-cli",
+      "license": "Unfree",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
+      "name": "1password-cli-2.30.3",
+      "pname": "_1password-cli",
+      "rev": "9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
+      "rev_count": 742084,
+      "rev_date": "2025-01-21T14:28:11Z",
+      "scrape_date": "2025-01-23T00:15:48Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": true,
+      "version": "1password-cli-2.30.3",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/w73v66msf4agaks802sylgx1175l33g1-1password-cli-2.30.3"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "_1password-cli",
+      "broken": false,
+      "derivation": "/nix/store/vp72l23qckzwlha0fxxaa15l1gv0215b-1password-cli-2.30.3.drv",
+      "description": "1Password command-line tool",
+      "install_id": "_1password-cli",
+      "license": "Unfree",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
+      "name": "1password-cli-2.30.3",
+      "pname": "_1password-cli",
+      "rev": "9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
+      "rev_count": 742084,
+      "rev_date": "2025-01-21T14:28:11Z",
+      "scrape_date": "2025-01-23T00:15:48Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": true,
+      "version": "1password-cli-2.30.3",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/jfjm52k7v1fg5ay7yfdzf3837rjhrjwp-1password-cli-2.30.3"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "_1password-cli",
+      "broken": false,
+      "derivation": "/nix/store/yallz2labaf40lg704m4zhfwz1wphl23-1password-cli-2.30.3.drv",
+      "description": "1Password command-line tool",
+      "install_id": "_1password-cli",
+      "license": "Unfree",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
+      "name": "1password-cli-2.30.3",
+      "pname": "_1password-cli",
+      "rev": "9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
+      "rev_count": 742084,
+      "rev_date": "2025-01-21T14:28:11Z",
+      "scrape_date": "2025-01-23T00:15:48Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": true,
+      "version": "1password-cli-2.30.3",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/3bg9zvc1rpvbb0hpin782cwwilkkgzl1-1password-cli-2.30.3"
+      },
+      "system": "x86_64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "_1password-cli",
+      "broken": false,
+      "derivation": "/nix/store/6a2bl4j5v910752kpp4mr99fsncrpmhf-1password-cli-2.30.3.drv",
+      "description": "1Password command-line tool",
+      "install_id": "_1password-cli",
+      "license": "Unfree",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
+      "name": "1password-cli-2.30.3",
+      "pname": "_1password-cli",
+      "rev": "9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
+      "rev_count": 742084,
+      "rev_date": "2025-01-21T14:28:11Z",
+      "scrape_date": "2025-01-23T00:15:48Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": true,
+      "version": "1password-cli-2.30.3",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/6mn0bk3xcwdz8z4hzp1r2kjhp149fmsr-1password-cli-2.30.3"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
     {
       "attr_path": "gitui",
       "broken": false,
@@ -275,6 +400,122 @@
       "priority": 5
     },
     {
+      "attr_path": "lima",
+      "broken": false,
+      "derivation": "/nix/store/lnmyyzsb4xsdhca9jbgnjcmdd4a7138n-lima-1.0.3.drv",
+      "description": "Linux virtual machines (on macOS, in most cases)",
+      "install_id": "lima",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
+      "name": "lima-1.0.3",
+      "pname": "lima",
+      "rev": "9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
+      "rev_count": 742084,
+      "rev_date": "2025-01-21T14:28:11Z",
+      "scrape_date": "2025-01-23T00:15:48Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.0.3",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/3kyybsv42n2q89sjcvyfrv6s68xsx744-lima-1.0.3"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "lima",
+      "broken": false,
+      "derivation": "/nix/store/4343i5ssridy2pkxscmzacq5bkbyv2ch-lima-1.0.3.drv",
+      "description": "Linux virtual machines (on macOS, in most cases)",
+      "install_id": "lima",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
+      "name": "lima-1.0.3",
+      "pname": "lima",
+      "rev": "9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
+      "rev_count": 742084,
+      "rev_date": "2025-01-21T14:28:11Z",
+      "scrape_date": "2025-01-23T00:15:48Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.0.3",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/fpapar3wb827mpphsz307cxlf1j80j7f-lima-1.0.3"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "lima",
+      "broken": false,
+      "derivation": "/nix/store/cgamw1m71cmcglrsvahlllxaz4gypyqq-lima-1.0.3.drv",
+      "description": "Linux virtual machines (on macOS, in most cases)",
+      "install_id": "lima",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
+      "name": "lima-1.0.3",
+      "pname": "lima",
+      "rev": "9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
+      "rev_count": 742084,
+      "rev_date": "2025-01-21T14:28:11Z",
+      "scrape_date": "2025-01-23T00:15:48Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.0.3",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/l53di7xg37nrlg3k4vmbr9jn30abgy82-lima-1.0.3"
+      },
+      "system": "x86_64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "lima",
+      "broken": false,
+      "derivation": "/nix/store/cjvp3sgipbd4dilz10fxcgp8mwl69dkr-lima-1.0.3.drv",
+      "description": "Linux virtual machines (on macOS, in most cases)",
+      "install_id": "lima",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
+      "name": "lima-1.0.3",
+      "pname": "lima",
+      "rev": "9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
+      "rev_count": 742084,
+      "rev_date": "2025-01-21T14:28:11Z",
+      "scrape_date": "2025-01-23T00:15:48Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.0.3",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/f32zci73qdzc6zmwcljs6s1igl1kwcmx-lima-1.0.3"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
       "attr_path": "podman",
       "broken": false,
       "derivation": "/nix/store/39qh6wsrpad0g9z3jvxcznb1c8w5zppa-podman-5.3.1.drv",
@@ -453,6 +694,142 @@
         "out": "/nix/store/xasghrybmlmz32xw2l35wppbr7xy5wa5-raycast-1.89.0"
       },
       "system": "x86_64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "xz",
+      "broken": false,
+      "derivation": "/nix/store/rq8cnkgc8zwczzcqqvsc1jcb6cbvp6lc-xz-5.6.3.drv",
+      "description": "General-purpose data compression software, successor of LZMA",
+      "install_id": "xz",
+      "license": "[ GPL-2.0-or-later, LGPL-2.1-or-later ]",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
+      "name": "xz-5.6.3",
+      "pname": "xz",
+      "rev": "9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
+      "rev_count": 742084,
+      "rev_date": "2025-01-21T14:28:11Z",
+      "scrape_date": "2025-01-23T00:15:48Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "5.6.3",
+      "outputs_to_install": [
+        "bin",
+        "man"
+      ],
+      "outputs": {
+        "bin": "/nix/store/fmgshpsi3m4c00hipfv9sqandfr7xjwl-xz-5.6.3-bin",
+        "dev": "/nix/store/9kr45pn9h08nj7lj3hqvvpmc0qzg510f-xz-5.6.3-dev",
+        "doc": "/nix/store/07s8khl92z626r4jq59j8aj5wkx7majy-xz-5.6.3-doc",
+        "man": "/nix/store/wgyhg9wjm81bm139gyyi6jjv2rzzqjnx-xz-5.6.3-man",
+        "out": "/nix/store/c0d762r3m1m3n3qc4dnffavp93004fzx-xz-5.6.3"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "xz",
+      "broken": false,
+      "derivation": "/nix/store/z6hxm4ygkw08w2c8vnkb1vjzhyl29wh3-xz-5.6.3.drv",
+      "description": "General-purpose data compression software, successor of LZMA",
+      "install_id": "xz",
+      "license": "[ GPL-2.0-or-later, LGPL-2.1-or-later ]",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
+      "name": "xz-5.6.3",
+      "pname": "xz",
+      "rev": "9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
+      "rev_count": 742084,
+      "rev_date": "2025-01-21T14:28:11Z",
+      "scrape_date": "2025-01-23T00:15:48Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "5.6.3",
+      "outputs_to_install": [
+        "bin",
+        "man"
+      ],
+      "outputs": {
+        "bin": "/nix/store/5hfs8xv5rlgv8bnrb1hmz4kq80zs3md9-xz-5.6.3-bin",
+        "dev": "/nix/store/h4nm668a75zzn158jikc4s21qx12xf4n-xz-5.6.3-dev",
+        "doc": "/nix/store/in8iyjvh3xmck96qj0252f3gy23ia16d-xz-5.6.3-doc",
+        "man": "/nix/store/0q16p04aziz28a1si6h2b5mwn1sn2xfc-xz-5.6.3-man",
+        "out": "/nix/store/6i04wxj2hv4xk3rvrnbxpcrjk4d5q66d-xz-5.6.3"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "xz",
+      "broken": false,
+      "derivation": "/nix/store/fs95h4k5ddsb0h3i99d32s6ly0j0j4h2-xz-5.6.3.drv",
+      "description": "General-purpose data compression software, successor of LZMA",
+      "install_id": "xz",
+      "license": "[ GPL-2.0-or-later, LGPL-2.1-or-later ]",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
+      "name": "xz-5.6.3",
+      "pname": "xz",
+      "rev": "9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
+      "rev_count": 742084,
+      "rev_date": "2025-01-21T14:28:11Z",
+      "scrape_date": "2025-01-23T00:15:48Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "5.6.3",
+      "outputs_to_install": [
+        "bin",
+        "man"
+      ],
+      "outputs": {
+        "bin": "/nix/store/9gcv4rzvxv1jl0i5pgsigcn93c08628w-xz-5.6.3-bin",
+        "dev": "/nix/store/f7ri3rxs8dwpxszg175z7zmmclrhyb5h-xz-5.6.3-dev",
+        "doc": "/nix/store/jd2c86v6mrlcz3v61plxpddnyp8qff4q-xz-5.6.3-doc",
+        "man": "/nix/store/hsa3y03rn97j2a65lrgxdiy4hpsb4nd3-xz-5.6.3-man",
+        "out": "/nix/store/wqyls39qqc4r58p36rcx2cs2s905030l-xz-5.6.3"
+      },
+      "system": "x86_64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "xz",
+      "broken": false,
+      "derivation": "/nix/store/4737vidy3nfpkxv4bn76sqqa5l9hwv13-xz-5.6.3.drv",
+      "description": "General-purpose data compression software, successor of LZMA",
+      "install_id": "xz",
+      "license": "[ GPL-2.0-or-later, LGPL-2.1-or-later ]",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
+      "name": "xz-5.6.3",
+      "pname": "xz",
+      "rev": "9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
+      "rev_count": 742084,
+      "rev_date": "2025-01-21T14:28:11Z",
+      "scrape_date": "2025-01-23T00:15:48Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "5.6.3",
+      "outputs_to_install": [
+        "bin",
+        "man"
+      ],
+      "outputs": {
+        "bin": "/nix/store/2818caib67ysbakmx87qwq4dbffln9g8-xz-5.6.3-bin",
+        "dev": "/nix/store/y3pbgrpn0a1az1ya1zyvdc6jq6hnb53y-xz-5.6.3-dev",
+        "doc": "/nix/store/9qx4slxynifv6l1323ld7rmn8cf756j1-xz-5.6.3-doc",
+        "man": "/nix/store/ydxysjrmwgspzr9fch3nchf6mm28fai1-xz-5.6.3-man",
+        "out": "/nix/store/z5lfnj2msazj5s9plcrzi3qbfr2xn8da-xz-5.6.3"
+      },
+      "system": "x86_64-linux",
       "group": "toplevel",
       "priority": 5
     }

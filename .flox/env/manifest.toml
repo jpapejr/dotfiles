@@ -20,6 +20,9 @@ raycast.pkg-path = "raycast"
 raycast.systems = ["aarch64-darwin", "x86_64-darwin"]
 helix.pkg-path = "helix"
 gitui.pkg-path = "gitui"
+lima.pkg-path = "lima"
+xz.pkg-path = "xz"
+_1password-cli.pkg-path = "_1password-cli"
 # gum.pkg-path = "gum"
 # gum.version = "^0.14.5"
 
