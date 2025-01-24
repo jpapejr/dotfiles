@@ -1,0 +1,7 @@
+#right_format = '$env_var'
+
+[env_var]
+variable = 'FLOX_PROMPT_ENVIRONMENTS'
+format = '[$env_value]($style)'
+default = 'none'
+style='green bold'

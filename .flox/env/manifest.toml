@@ -34,6 +34,7 @@ _1password-cli.pkg-path = "_1password-cli"
 [vars]
 # INTRO_MESSAGE = "It's gettin' Flox in here"
 EDITOR="hx"
+FLOX_PROMPT_DISABLE="1"
 
 ## Activation Hook ---------------------------------------------------
 ##  ... run by _bash_ shell when you run 'flox activate'.

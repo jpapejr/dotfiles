@@ -30,7 +30,8 @@
       }
     },
     "vars": {
-      "EDITOR": "hx"
+      "EDITOR": "hx",
+      "FLOX_PROMPT_DISABLE": "1"
     },
     "hook": {},
     "profile": {
