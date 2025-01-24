@@ -3,6 +3,12 @@
   "manifest": {
     "version": 1,
     "install": {
+      "gitui": {
+        "pkg-path": "gitui"
+      },
+      "helix": {
+        "pkg-path": "helix"
+      },
       "podman": {
         "pkg-path": "podman"
       },
@@ -18,7 +24,10 @@
       "EDITOR": "hx"
     },
     "hook": {},
-    "profile": {},
+    "profile": {
+      "common": "  alias ic='ibmcloud'\n  alias iks='ibmcloud ks'\n  alias roks='ibmcloud oc'\n  alias vpc='ibmcloud is'\n  alias c='podman ps'\n  alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'\n  autoload -U colors; colors\n  export KUBECONFIG=`mktemp`\n  export PATH=\"$PATH:/Users/jtp/.local/bin:/usr/local/bin\"\n\n",
+      "zsh": "  eval \"$(starship init zsh)\"\n"
+    },
     "options": {
       "systems": [
         "aarch64-darwin",
@@ -33,6 +42,238 @@
     }
   },
   "packages": [
+    {
+      "attr_path": "gitui",
+      "broken": false,
+      "derivation": "/nix/store/88vm28c708bpwb25fa1fk3d6zhfr2k1c-gitui-0.27.0.drv",
+      "description": "Blazing fast terminal-ui for Git written in Rust",
+      "install_id": "gitui",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
+      "name": "gitui-0.27.0",
+      "pname": "gitui",
+      "rev": "9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
+      "rev_count": 742084,
+      "rev_date": "2025-01-21T14:28:11Z",
+      "scrape_date": "2025-01-23T00:15:48Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.27.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/n7ykmkisakv94j0m9fswlja62rcq8z9x-gitui-0.27.0"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "gitui",
+      "broken": false,
+      "derivation": "/nix/store/0zixxwa5indms7zvx4mvdhn5wn1mqgp1-gitui-0.27.0.drv",
+      "description": "Blazing fast terminal-ui for Git written in Rust",
+      "install_id": "gitui",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
+      "name": "gitui-0.27.0",
+      "pname": "gitui",
+      "rev": "9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
+      "rev_count": 742084,
+      "rev_date": "2025-01-21T14:28:11Z",
+      "scrape_date": "2025-01-23T00:15:48Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.27.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/wx0y2vzpi5injmd49zrflgv8xsww6yir-gitui-0.27.0"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "gitui",
+      "broken": false,
+      "derivation": "/nix/store/08m3y2c2ih0f4s9givrdn5znfawm4vi0-gitui-0.27.0.drv",
+      "description": "Blazing fast terminal-ui for Git written in Rust",
+      "install_id": "gitui",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
+      "name": "gitui-0.27.0",
+      "pname": "gitui",
+      "rev": "9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
+      "rev_count": 742084,
+      "rev_date": "2025-01-21T14:28:11Z",
+      "scrape_date": "2025-01-23T00:15:48Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.27.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/kk751jkq28zz57qb1w7m46bhf0xy5b8k-gitui-0.27.0"
+      },
+      "system": "x86_64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "gitui",
+      "broken": false,
+      "derivation": "/nix/store/rkr9177xkkq81rrlvj62davs5r9gbpkd-gitui-0.27.0.drv",
+      "description": "Blazing fast terminal-ui for Git written in Rust",
+      "install_id": "gitui",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
+      "name": "gitui-0.27.0",
+      "pname": "gitui",
+      "rev": "9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
+      "rev_count": 742084,
+      "rev_date": "2025-01-21T14:28:11Z",
+      "scrape_date": "2025-01-23T00:15:48Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.27.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/s82wg7i20sj8ss6mqazh3b2wl4yyiwgs-gitui-0.27.0"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "helix",
+      "broken": false,
+      "derivation": "/nix/store/j17xj2yncx19dqwlg48szk5njmrh39qh-helix-25.01.1.drv",
+      "description": "Post-modern modal text editor",
+      "install_id": "helix",
+      "license": "MPL-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
+      "name": "helix-25.01.1",
+      "pname": "helix",
+      "rev": "9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
+      "rev_count": 742084,
+      "rev_date": "2025-01-21T14:28:11Z",
+      "scrape_date": "2025-01-23T00:15:48Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "25.01.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/lk58j36gdg9gc203yb210757xdddnvk8-helix-25.01.1"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "helix",
+      "broken": false,
+      "derivation": "/nix/store/d73jlwccvp0c6sygjjmpgxpcjfyxrcn3-helix-25.01.1.drv",
+      "description": "Post-modern modal text editor",
+      "install_id": "helix",
+      "license": "MPL-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
+      "name": "helix-25.01.1",
+      "pname": "helix",
+      "rev": "9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
+      "rev_count": 742084,
+      "rev_date": "2025-01-21T14:28:11Z",
+      "scrape_date": "2025-01-23T00:15:48Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "25.01.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/mdwlq022v5j80hppsc2jkvfvkv7mg33y-helix-25.01.1"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "helix",
+      "broken": false,
+      "derivation": "/nix/store/50kw64fk6izj79i0gdj6kylwwq335zl6-helix-25.01.1.drv",
+      "description": "Post-modern modal text editor",
+      "install_id": "helix",
+      "license": "MPL-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
+      "name": "helix-25.01.1",
+      "pname": "helix",
+      "rev": "9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
+      "rev_count": 742084,
+      "rev_date": "2025-01-21T14:28:11Z",
+      "scrape_date": "2025-01-23T00:15:48Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "25.01.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/5anhf3vy9dzy9pfi2yx7hnx4nsmhm6jp-helix-25.01.1"
+      },
+      "system": "x86_64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "helix",
+      "broken": false,
+      "derivation": "/nix/store/s4wk9kzavm1ag4wi1f8yc2vkrmdfdwiv-helix-25.01.1.drv",
+      "description": "Post-modern modal text editor",
+      "install_id": "helix",
+      "license": "MPL-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
+      "name": "helix-25.01.1",
+      "pname": "helix",
+      "rev": "9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
+      "rev_count": 742084,
+      "rev_date": "2025-01-21T14:28:11Z",
+      "scrape_date": "2025-01-23T00:15:48Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "25.01.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/w7q3jnjzq9xs365hcy5ypn3p1zxxmkkq-helix-25.01.1"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
     {
       "attr_path": "podman",
       "broken": false,
