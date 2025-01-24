@@ -1,0 +1,154 @@
+{
+  "lockfile-version": 1,
+  "manifest": {
+    "version": 1,
+    "install": {
+      "podman": {
+        "pkg-path": "podman"
+      }
+    },
+    "vars": {
+      "EDITOR": "hx"
+    },
+    "hook": {},
+    "profile": {},
+    "options": {
+      "systems": [
+        "aarch64-darwin",
+        "aarch64-linux",
+        "x86_64-darwin",
+        "x86_64-linux"
+      ],
+      "allow": {
+        "licenses": []
+      },
+      "semver": {}
+    }
+  },
+  "packages": [
+    {
+      "attr_path": "podman",
+      "broken": false,
+      "derivation": "/nix/store/39qh6wsrpad0g9z3jvxcznb1c8w5zppa-podman-5.3.1.drv",
+      "description": "Program for managing pods, containers and container images",
+      "install_id": "podman",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
+      "name": "podman-5.3.1",
+      "pname": "podman",
+      "rev": "9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
+      "rev_count": 742084,
+      "rev_date": "2025-01-21T14:28:11Z",
+      "scrape_date": "2025-01-23T00:15:48Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "5.3.1",
+      "outputs_to_install": [
+        "out",
+        "man"
+      ],
+      "outputs": {
+        "man": "/nix/store/rr6rgn7nfqnbafd6qsdr7b02s9pbv3ib-podman-5.3.1-man",
+        "out": "/nix/store/ar9ip0v4g4520cdfsb6n2p4qj883m89d-podman-5.3.1"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "podman",
+      "broken": false,
+      "derivation": "/nix/store/rzfp2akwb2197g1vpxx3dhbrcywsvfl5-podman-5.3.1.drv",
+      "description": "Program for managing pods, containers and container images",
+      "install_id": "podman",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
+      "name": "podman-5.3.1",
+      "pname": "podman",
+      "rev": "9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
+      "rev_count": 742084,
+      "rev_date": "2025-01-21T14:28:11Z",
+      "scrape_date": "2025-01-23T00:15:48Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "5.3.1",
+      "outputs_to_install": [
+        "out",
+        "man"
+      ],
+      "outputs": {
+        "man": "/nix/store/s2fskzvb7vn6by7vjpdrrrv97jbhdfk1-podman-5.3.1-man",
+        "out": "/nix/store/8ba3pm88y2jf2csm1mc6026hbw0xi8yh-podman-5.3.1"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "podman",
+      "broken": false,
+      "derivation": "/nix/store/hs0sbd0svvjlncw2nzvzwd7ixdfrjwpv-podman-5.3.1.drv",
+      "description": "Program for managing pods, containers and container images",
+      "install_id": "podman",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
+      "name": "podman-5.3.1",
+      "pname": "podman",
+      "rev": "9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
+      "rev_count": 742084,
+      "rev_date": "2025-01-21T14:28:11Z",
+      "scrape_date": "2025-01-23T00:15:48Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "5.3.1",
+      "outputs_to_install": [
+        "out",
+        "man"
+      ],
+      "outputs": {
+        "man": "/nix/store/73hlx4kwalp3fpcpl8zyajcfd1ambcq5-podman-5.3.1-man",
+        "out": "/nix/store/b7i5mmnqzar5bfamsp4lka6aay1w8gss-podman-5.3.1"
+      },
+      "system": "x86_64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "podman",
+      "broken": false,
+      "derivation": "/nix/store/kxdvnqp49ji4fxhkca5ga24ahn0rm5y0-podman-5.3.1.drv",
+      "description": "Program for managing pods, containers and container images",
+      "install_id": "podman",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
+      "name": "podman-5.3.1",
+      "pname": "podman",
+      "rev": "9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
+      "rev_count": 742084,
+      "rev_date": "2025-01-21T14:28:11Z",
+      "scrape_date": "2025-01-23T00:15:48Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "5.3.1",
+      "outputs_to_install": [
+        "out",
+        "man"
+      ],
+      "outputs": {
+        "man": "/nix/store/zslw4a6q40f8xyzcl0ad9h56g8i66qpq-podman-5.3.1-man",
+        "out": "/nix/store/5prdc9zp2bpn23ifn0k1prwn8776nxg2-podman-5.3.1"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    }
+  ]
+}
