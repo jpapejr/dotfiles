@@ -6,6 +6,10 @@
       "_1password-cli": {
         "pkg-path": "_1password-cli"
       },
+      "exa": {
+        "pkg-path": "exa",
+        "pkg-group": "exa"
+      },
       "gitui": {
         "pkg-path": "gitui"
       },
@@ -35,7 +39,7 @@
     },
     "hook": {},
     "profile": {
-      "common": "  alias ic='ibmcloud'\n  alias iks='ibmcloud ks'\n  alias roks='ibmcloud oc'\n  alias vpc='ibmcloud is'\n  alias c='podman ps'\n  alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'\n  autoload -U colors; colors\n  export KUBECONFIG=`mktemp`\n  export PATH=\"$PATH:/Users/jtp/.local/bin:/usr/local/bin\"\n\n",
+      "common": "  alias ic='ibmcloud'\n  alias iks='ibmcloud ks'\n  alias roks='ibmcloud oc'\n  alias vpc='ibmcloud is'\n  alias c='podman ps'\n  alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'\n  alias ls='exa'\n  autoload -U colors; colors\n  export KUBECONFIG=`mktemp`\n  export PATH=\"$PATH:/Users/jtp/.local/bin:/usr/local/bin\"\n\n",
       "zsh": "  eval \"$(starship init zsh)\"\n"
     },
     "options": {
@@ -52,6 +56,134 @@
     }
   },
   "packages": [
+    {
+      "attr_path": "exa",
+      "broken": false,
+      "derivation": "/nix/store/kl61866l4995mw6c85dir0fijc4vxzyb-exa-unstable-2023-03-01.drv",
+      "description": "Replacement for 'ls' written in Rust",
+      "install_id": "exa",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=e56990880811a451abd32515698c712788be5720",
+      "name": "exa-unstable-2023-03-01",
+      "pname": "exa",
+      "rev": "e56990880811a451abd32515698c712788be5720",
+      "rev_count": 521611,
+      "rev_date": "2023-09-02T14:03:41Z",
+      "scrape_date": "2024-08-16T00:19:10Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "unstable-2023-03-01",
+      "outputs_to_install": [
+        "out",
+        "man"
+      ],
+      "outputs": {
+        "man": "/nix/store/549s3qg3qrhyjjwwin29ma4hwqs3938j-exa-unstable-2023-03-01-man",
+        "out": "/nix/store/awvk6hp7d1mr313xan0n29akwfd6cbdw-exa-unstable-2023-03-01"
+      },
+      "system": "aarch64-darwin",
+      "group": "exa",
+      "priority": 5
+    },
+    {
+      "attr_path": "exa",
+      "broken": false,
+      "derivation": "/nix/store/cc4zv72p38qbpcwf6b04ag33zgmxj9bm-exa-unstable-2023-03-01.drv",
+      "description": "Replacement for 'ls' written in Rust",
+      "install_id": "exa",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=e56990880811a451abd32515698c712788be5720",
+      "name": "exa-unstable-2023-03-01",
+      "pname": "exa",
+      "rev": "e56990880811a451abd32515698c712788be5720",
+      "rev_count": 521611,
+      "rev_date": "2023-09-02T14:03:41Z",
+      "scrape_date": "2024-08-16T00:19:10Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "unstable-2023-03-01",
+      "outputs_to_install": [
+        "out",
+        "man"
+      ],
+      "outputs": {
+        "man": "/nix/store/qsyj83prwsbss7rkza5dim608nz6blq8-exa-unstable-2023-03-01-man",
+        "out": "/nix/store/inlz5cizqgsqw3ivyhdfx06yiaszqshs-exa-unstable-2023-03-01"
+      },
+      "system": "aarch64-linux",
+      "group": "exa",
+      "priority": 5
+    },
+    {
+      "attr_path": "exa",
+      "broken": false,
+      "derivation": "/nix/store/pkjc6c907pzzkhi0s5m405ghx02c539l-exa-unstable-2023-03-01.drv",
+      "description": "Replacement for 'ls' written in Rust",
+      "install_id": "exa",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=e56990880811a451abd32515698c712788be5720",
+      "name": "exa-unstable-2023-03-01",
+      "pname": "exa",
+      "rev": "e56990880811a451abd32515698c712788be5720",
+      "rev_count": 521611,
+      "rev_date": "2023-09-02T14:03:41Z",
+      "scrape_date": "2024-08-16T00:19:10Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "unstable-2023-03-01",
+      "outputs_to_install": [
+        "out",
+        "man"
+      ],
+      "outputs": {
+        "man": "/nix/store/sbbhcimxw42asmdhjnnp4zkjgwjj24ax-exa-unstable-2023-03-01-man",
+        "out": "/nix/store/52685q7wa2lks572nqyvaibpqj1x47jg-exa-unstable-2023-03-01"
+      },
+      "system": "x86_64-darwin",
+      "group": "exa",
+      "priority": 5
+    },
+    {
+      "attr_path": "exa",
+      "broken": false,
+      "derivation": "/nix/store/fwvk66brfmb05jd1vzsvpqy4d45v4iii-exa-unstable-2023-03-01.drv",
+      "description": "Replacement for 'ls' written in Rust",
+      "install_id": "exa",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=e56990880811a451abd32515698c712788be5720",
+      "name": "exa-unstable-2023-03-01",
+      "pname": "exa",
+      "rev": "e56990880811a451abd32515698c712788be5720",
+      "rev_count": 521611,
+      "rev_date": "2023-09-02T14:03:41Z",
+      "scrape_date": "2024-08-16T00:19:10Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "unstable-2023-03-01",
+      "outputs_to_install": [
+        "out",
+        "man"
+      ],
+      "outputs": {
+        "man": "/nix/store/7arx9z5xf60g7iyhxj80j9g21gs1xgsk-exa-unstable-2023-03-01-man",
+        "out": "/nix/store/lh4c4lvn5bpndiml3ajhjarcpy9wpf3g-exa-unstable-2023-03-01"
+      },
+      "system": "x86_64-linux",
+      "group": "exa",
+      "priority": 5
+    },
     {
       "attr_path": "_1password-cli",
       "broken": false,
