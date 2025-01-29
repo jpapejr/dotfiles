@@ -39,7 +39,7 @@
     },
     "hook": {},
     "profile": {
-      "common": "  alias ic='ibmcloud'\n  alias iks='ibmcloud ks'\n  alias roks='ibmcloud oc'\n  alias vpc='ibmcloud is'\n  alias c='podman ps'\n  alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'\n  alias ls='exa'\n  autoload -U colors; colors\n  export KUBECONFIG=`mktemp`\n  export PATH=\"$PATH:/Users/jtp/.local/bin:/usr/local/bin\"\n\n",
+      "common": "  alias ic='ibmcloud'\n  alias iks='ibmcloud ks'\n  alias roks='ibmcloud oc'\n  alias vpc='ibmcloud is'\n  alias c='podman ps'\n  alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'\n  alias ls='exa'\n  autoload -U colors; colors\n  export KUBECONFIG=`mktemp`\n  export PATH=\"$PATH:/Users/jtp/.local/bin:/usr/local/bin\"\n  export HISTFILE=~/.zsh_history\n  export SAVEHIST=1000\n  setopt inc_append_history share_history\n",
       "zsh": "  eval \"$(starship init zsh)\"\n"
     },
     "options": {
