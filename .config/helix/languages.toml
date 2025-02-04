@@ -1,1 +1,53 @@
+##############################
+## Configuration for lsp-ai ##
+##############################
 
+[language-server.lsp-ai]
+command = "lsp-ai"
+
+[language-server.lsp-ai.config.memory]
+file_store = { }
+
+[language-server.lsp-ai.config.models.model1]
+type = "llama_cpp"
+repository = "stabilityai/stable-code-3b"
+name = "stable-code-3b-Q5_K_M.gguf"
+n_ctx = 2048
+
+# [language-server.lsp-ai.config.models.model2]
+# type = "llama_cpp"
+# repository = "QuantFactory/Meta-Llama-3-70B-Instruct-GGUF-v2"
+# name = "Meta-Llama-3-70B-Instruct-v2.Q5_K_M.gguf"
+# n_ctx = 6000
+
+[language-server.lsp-ai.config.completion]
+model = "model1"
+
+[language-server.lsp-ai.config.completion.parameters]
+max_tokens = 64
+max_context = 2000
+
+[language-server.lsp-ai.config.completion.parameters.fim]
+start = "<fim_prefix>"
+middle = "<fim_suffix>"
+end = "<fim_middle>"
+
+
+#################################
+## Configuration for languages ##
+#################################
+
+[[language]]
+name = "python"
+language-servers = ["pyright", "lsp-ai"]
+
+## Configure other languages here
+[[language]]
+name = "markdown"
+language-servers = ["lsp-ai"]
+
+[[language]]
+name = "terraform"
+language-servers = ["terraform-ls", "lsp-ai"]
+scope = "source.tf"
+file-types = ["tf"]
