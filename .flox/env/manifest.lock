@@ -49,6 +49,9 @@
           "x86_64-darwin"
         ]
       },
+      "starship": {
+        "pkg-path": "starship"
+      },
       "xz": {
         "pkg-path": "xz"
       }
@@ -59,8 +62,7 @@
     },
     "hook": {},
     "profile": {
-      "common": "  alias ic='ibmcloud'\n  alias iks='ibmcloud ks'\n  alias roks='ibmcloud oc'\n  alias vpc='ibmcloud is'\n  alias c='podman ps'\n  alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'\n  alias ls='exa'\n  autoload -U colors; colors\n  export KUBECONFIG=`mktemp`\n  export PATH=\"$PATH:/Users/jtp/.local/bin:/usr/local/bin\"\n  export HISTFILE=~/.zsh_history\n  export SAVEHIST=1000\n  setopt inc_append_history share_history\n",
-      "zsh": "  eval \"$(starship init zsh)\"\n"
+      "common": "  alias ic='ibmcloud'\n  alias iks='ibmcloud ks'\n  alias roks='ibmcloud oc'\n  alias vpc='ibmcloud is'\n  alias c='podman ps'\n  alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'\n  alias ls='exa'\n  autoload -U colors; colors\n  export KUBECONFIG=`mktemp`\n  export PATH=\"$PATH:/Users/jtp/.local/bin:/usr/local/bin\"\n  export HISTFILE=~/.zsh_history\n  export SAVEHIST=1000\n  setopt inc_append_history share_history\n"
     },
     "options": {
       "systems": [
@@ -1555,6 +1557,122 @@
         "out": "/nix/store/wkyfi0wi3aylxfks0s2zaa7h4vql4cfi-raycast-1.90.0"
       },
       "system": "x86_64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "starship",
+      "broken": false,
+      "derivation": "/nix/store/wd1f0183l4mqchl15i1p4lr4gfddijvm-starship-1.22.1.drv",
+      "description": "Minimal, blazing fast, and extremely customizable prompt for any shell",
+      "install_id": "starship",
+      "license": "ISC",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=799ba5bffed04ced7067a91798353d360788b30d",
+      "name": "starship-1.22.1",
+      "pname": "starship",
+      "rev": "799ba5bffed04ced7067a91798353d360788b30d",
+      "rev_count": 747653,
+      "rev_date": "2025-02-04T14:46:40Z",
+      "scrape_date": "2025-02-05T00:30:07Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.22.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/8hfx54bslhdpwvdc1ah02ckvlz8ac88g-starship-1.22.1"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "starship",
+      "broken": false,
+      "derivation": "/nix/store/zxqc8nl9w800nqdvwv4zzk8ba92lidnz-starship-1.22.1.drv",
+      "description": "Minimal, blazing fast, and extremely customizable prompt for any shell",
+      "install_id": "starship",
+      "license": "ISC",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=799ba5bffed04ced7067a91798353d360788b30d",
+      "name": "starship-1.22.1",
+      "pname": "starship",
+      "rev": "799ba5bffed04ced7067a91798353d360788b30d",
+      "rev_count": 747653,
+      "rev_date": "2025-02-04T14:46:40Z",
+      "scrape_date": "2025-02-05T00:30:07Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.22.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/hkc59cqll5mkdr6p8kwpw85gm4i3l6ym-starship-1.22.1"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "starship",
+      "broken": false,
+      "derivation": "/nix/store/6wmxh5a3mnwfl0rizgin12mcxv80d39g-starship-1.22.1.drv",
+      "description": "Minimal, blazing fast, and extremely customizable prompt for any shell",
+      "install_id": "starship",
+      "license": "ISC",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=799ba5bffed04ced7067a91798353d360788b30d",
+      "name": "starship-1.22.1",
+      "pname": "starship",
+      "rev": "799ba5bffed04ced7067a91798353d360788b30d",
+      "rev_count": 747653,
+      "rev_date": "2025-02-04T14:46:40Z",
+      "scrape_date": "2025-02-05T00:30:07Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.22.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/dzvipnq7xq7xjyc6a9zmahppyzkh985n-starship-1.22.1"
+      },
+      "system": "x86_64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "starship",
+      "broken": false,
+      "derivation": "/nix/store/231wgii82ax9jmfi5hz2ilwgslj63lk1-starship-1.22.1.drv",
+      "description": "Minimal, blazing fast, and extremely customizable prompt for any shell",
+      "install_id": "starship",
+      "license": "ISC",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=799ba5bffed04ced7067a91798353d360788b30d",
+      "name": "starship-1.22.1",
+      "pname": "starship",
+      "rev": "799ba5bffed04ced7067a91798353d360788b30d",
+      "rev_count": 747653,
+      "rev_date": "2025-02-04T14:46:40Z",
+      "scrape_date": "2025-02-05T00:30:07Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.22.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/95a32cz0mrbgsgnbilg20d2wdw6aj6x2-starship-1.22.1"
+      },
+      "system": "x86_64-linux",
       "group": "toplevel",
       "priority": 5
     },

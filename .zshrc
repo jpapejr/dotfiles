@@ -38,5 +38,5 @@
 # export PATH="$PATH:/Users/jtp/.local/bin:/usr/local/bin"
 
 # eval "$(direnv hook zsh)"
-# eval "$(starship init zsh)"
+eval "$(starship init zsh)"
 # eval "$(flox activate -d ~ -m run)"
