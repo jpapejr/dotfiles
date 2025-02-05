@@ -26,6 +26,10 @@
       "llama-cpp": {
         "pkg-path": "llama-cpp"
       },
+      "nodejs": {
+        "pkg-path": "nodejs",
+        "pkg-group": "node-vscode"
+      },
       "ollama": {
         "pkg-path": "ollama"
       },
@@ -34,6 +38,9 @@
       },
       "podman": {
         "pkg-path": "podman"
+      },
+      "prettier": {
+        "pkg-path": "nodePackages.prettier"
       },
       "raycast": {
         "pkg-path": "raycast",
@@ -322,19 +329,139 @@
       "priority": 5
     },
     {
+      "attr_path": "nodejs",
+      "broken": false,
+      "derivation": "/nix/store/3d63jxlp8q5k9j578l8y8kv66063id4i-nodejs-22.12.0.drv",
+      "description": "Event-driven I/O framework for the V8 JavaScript engine",
+      "install_id": "nodejs",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=799ba5bffed04ced7067a91798353d360788b30d",
+      "name": "nodejs-22.12.0",
+      "pname": "nodejs",
+      "rev": "799ba5bffed04ced7067a91798353d360788b30d",
+      "rev_count": 747653,
+      "rev_date": "2025-02-04T14:46:40Z",
+      "scrape_date": "2025-02-05T00:30:07Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "22.12.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "libv8": "/nix/store/hvpmcjbmsyknlpjjd7a8na891fv4a81i-nodejs-22.12.0-libv8",
+        "out": "/nix/store/ygk01vha6k5zxgn9rsxi3k6cm2kbnwsc-nodejs-22.12.0"
+      },
+      "system": "aarch64-darwin",
+      "group": "node-vscode",
+      "priority": 5
+    },
+    {
+      "attr_path": "nodejs",
+      "broken": false,
+      "derivation": "/nix/store/4ikgm8yyp8zyylpfjkndmswphbps4kq4-nodejs-22.12.0.drv",
+      "description": "Event-driven I/O framework for the V8 JavaScript engine",
+      "install_id": "nodejs",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=799ba5bffed04ced7067a91798353d360788b30d",
+      "name": "nodejs-22.12.0",
+      "pname": "nodejs",
+      "rev": "799ba5bffed04ced7067a91798353d360788b30d",
+      "rev_count": 747653,
+      "rev_date": "2025-02-04T14:46:40Z",
+      "scrape_date": "2025-02-05T00:30:07Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "22.12.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "libv8": "/nix/store/48is8354i9qwj194id0ncczkvzvfqhim-nodejs-22.12.0-libv8",
+        "out": "/nix/store/jdgrvyf5l99rzjayicxjw7i6p98r0rlb-nodejs-22.12.0"
+      },
+      "system": "aarch64-linux",
+      "group": "node-vscode",
+      "priority": 5
+    },
+    {
+      "attr_path": "nodejs",
+      "broken": false,
+      "derivation": "/nix/store/8781n36mwvzx5d4mncvgf09pqlgx7gx3-nodejs-22.12.0.drv",
+      "description": "Event-driven I/O framework for the V8 JavaScript engine",
+      "install_id": "nodejs",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=799ba5bffed04ced7067a91798353d360788b30d",
+      "name": "nodejs-22.12.0",
+      "pname": "nodejs",
+      "rev": "799ba5bffed04ced7067a91798353d360788b30d",
+      "rev_count": 747653,
+      "rev_date": "2025-02-04T14:46:40Z",
+      "scrape_date": "2025-02-05T00:30:07Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "22.12.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "libv8": "/nix/store/gvys8kz8pdw62ch2x7k25rrmcw3mqnrw-nodejs-22.12.0-libv8",
+        "out": "/nix/store/6fnlali5gqihxs02adk1bdzjsya9cacp-nodejs-22.12.0"
+      },
+      "system": "x86_64-darwin",
+      "group": "node-vscode",
+      "priority": 5
+    },
+    {
+      "attr_path": "nodejs",
+      "broken": false,
+      "derivation": "/nix/store/a73rv2rzsy47phyhbdnlnycpvda83z0c-nodejs-22.12.0.drv",
+      "description": "Event-driven I/O framework for the V8 JavaScript engine",
+      "install_id": "nodejs",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=799ba5bffed04ced7067a91798353d360788b30d",
+      "name": "nodejs-22.12.0",
+      "pname": "nodejs",
+      "rev": "799ba5bffed04ced7067a91798353d360788b30d",
+      "rev_count": 747653,
+      "rev_date": "2025-02-04T14:46:40Z",
+      "scrape_date": "2025-02-05T00:30:07Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "22.12.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "libv8": "/nix/store/n7x07hrc6sjhh6as6c75g15blq1c1ykh-nodejs-22.12.0-libv8",
+        "out": "/nix/store/k1r91cjalyc2mzzllpv5hklhqn8wvgjr-nodejs-22.12.0"
+      },
+      "system": "x86_64-linux",
+      "group": "node-vscode",
+      "priority": 5
+    },
+    {
       "attr_path": "_1password-cli",
       "broken": false,
       "derivation": "/nix/store/x4baka2lhxz8ljxqmxya7s98bf3khayf-1password-cli-2.30.3.drv",
       "description": "1Password command-line tool",
       "install_id": "_1password-cli",
       "license": "Unfree",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=3a228057f5b619feb3186e986dbe76278d707b6e",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=799ba5bffed04ced7067a91798353d360788b30d",
       "name": "1password-cli-2.30.3",
       "pname": "_1password-cli",
-      "rev": "3a228057f5b619feb3186e986dbe76278d707b6e",
-      "rev_count": 746337,
-      "rev_date": "2025-02-01T11:46:30Z",
-      "scrape_date": "2025-02-02T00:30:00Z",
+      "rev": "799ba5bffed04ced7067a91798353d360788b30d",
+      "rev_count": 747653,
+      "rev_date": "2025-02-04T14:46:40Z",
+      "scrape_date": "2025-02-05T00:30:07Z",
       "stabilities": [
         "unstable"
       ],
@@ -357,13 +484,13 @@
       "description": "1Password command-line tool",
       "install_id": "_1password-cli",
       "license": "Unfree",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=3a228057f5b619feb3186e986dbe76278d707b6e",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=799ba5bffed04ced7067a91798353d360788b30d",
       "name": "1password-cli-2.30.3",
       "pname": "_1password-cli",
-      "rev": "3a228057f5b619feb3186e986dbe76278d707b6e",
-      "rev_count": 746337,
-      "rev_date": "2025-02-01T11:46:30Z",
-      "scrape_date": "2025-02-02T00:30:00Z",
+      "rev": "799ba5bffed04ced7067a91798353d360788b30d",
+      "rev_count": 747653,
+      "rev_date": "2025-02-04T14:46:40Z",
+      "scrape_date": "2025-02-05T00:30:07Z",
       "stabilities": [
         "unstable"
       ],
@@ -386,13 +513,13 @@
       "description": "1Password command-line tool",
       "install_id": "_1password-cli",
       "license": "Unfree",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=3a228057f5b619feb3186e986dbe76278d707b6e",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=799ba5bffed04ced7067a91798353d360788b30d",
       "name": "1password-cli-2.30.3",
       "pname": "_1password-cli",
-      "rev": "3a228057f5b619feb3186e986dbe76278d707b6e",
-      "rev_count": 746337,
-      "rev_date": "2025-02-01T11:46:30Z",
-      "scrape_date": "2025-02-02T00:30:00Z",
+      "rev": "799ba5bffed04ced7067a91798353d360788b30d",
+      "rev_count": 747653,
+      "rev_date": "2025-02-04T14:46:40Z",
+      "scrape_date": "2025-02-05T00:30:07Z",
       "stabilities": [
         "unstable"
       ],
@@ -415,13 +542,13 @@
       "description": "1Password command-line tool",
       "install_id": "_1password-cli",
       "license": "Unfree",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=3a228057f5b619feb3186e986dbe76278d707b6e",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=799ba5bffed04ced7067a91798353d360788b30d",
       "name": "1password-cli-2.30.3",
       "pname": "_1password-cli",
-      "rev": "3a228057f5b619feb3186e986dbe76278d707b6e",
-      "rev_count": 746337,
-      "rev_date": "2025-02-01T11:46:30Z",
-      "scrape_date": "2025-02-02T00:30:00Z",
+      "rev": "799ba5bffed04ced7067a91798353d360788b30d",
+      "rev_count": 747653,
+      "rev_date": "2025-02-04T14:46:40Z",
+      "scrape_date": "2025-02-05T00:30:07Z",
       "stabilities": [
         "unstable"
       ],
@@ -444,13 +571,13 @@
       "description": "Blazing fast terminal-ui for Git written in Rust",
       "install_id": "gitui",
       "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=3a228057f5b619feb3186e986dbe76278d707b6e",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=799ba5bffed04ced7067a91798353d360788b30d",
       "name": "gitui-0.27.0",
       "pname": "gitui",
-      "rev": "3a228057f5b619feb3186e986dbe76278d707b6e",
-      "rev_count": 746337,
-      "rev_date": "2025-02-01T11:46:30Z",
-      "scrape_date": "2025-02-02T00:30:00Z",
+      "rev": "799ba5bffed04ced7067a91798353d360788b30d",
+      "rev_count": 747653,
+      "rev_date": "2025-02-04T14:46:40Z",
+      "scrape_date": "2025-02-05T00:30:07Z",
       "stabilities": [
         "unstable"
       ],
@@ -473,13 +600,13 @@
       "description": "Blazing fast terminal-ui for Git written in Rust",
       "install_id": "gitui",
       "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=3a228057f5b619feb3186e986dbe76278d707b6e",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=799ba5bffed04ced7067a91798353d360788b30d",
       "name": "gitui-0.27.0",
       "pname": "gitui",
-      "rev": "3a228057f5b619feb3186e986dbe76278d707b6e",
-      "rev_count": 746337,
-      "rev_date": "2025-02-01T11:46:30Z",
-      "scrape_date": "2025-02-02T00:30:00Z",
+      "rev": "799ba5bffed04ced7067a91798353d360788b30d",
+      "rev_count": 747653,
+      "rev_date": "2025-02-04T14:46:40Z",
+      "scrape_date": "2025-02-05T00:30:07Z",
       "stabilities": [
         "unstable"
       ],
@@ -502,13 +629,13 @@
       "description": "Blazing fast terminal-ui for Git written in Rust",
       "install_id": "gitui",
       "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=3a228057f5b619feb3186e986dbe76278d707b6e",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=799ba5bffed04ced7067a91798353d360788b30d",
       "name": "gitui-0.27.0",
       "pname": "gitui",
-      "rev": "3a228057f5b619feb3186e986dbe76278d707b6e",
-      "rev_count": 746337,
-      "rev_date": "2025-02-01T11:46:30Z",
-      "scrape_date": "2025-02-02T00:30:00Z",
+      "rev": "799ba5bffed04ced7067a91798353d360788b30d",
+      "rev_count": 747653,
+      "rev_date": "2025-02-04T14:46:40Z",
+      "scrape_date": "2025-02-05T00:30:07Z",
       "stabilities": [
         "unstable"
       ],
@@ -531,13 +658,13 @@
       "description": "Blazing fast terminal-ui for Git written in Rust",
       "install_id": "gitui",
       "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=3a228057f5b619feb3186e986dbe76278d707b6e",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=799ba5bffed04ced7067a91798353d360788b30d",
       "name": "gitui-0.27.0",
       "pname": "gitui",
-      "rev": "3a228057f5b619feb3186e986dbe76278d707b6e",
-      "rev_count": 746337,
-      "rev_date": "2025-02-01T11:46:30Z",
-      "scrape_date": "2025-02-02T00:30:00Z",
+      "rev": "799ba5bffed04ced7067a91798353d360788b30d",
+      "rev_count": 747653,
+      "rev_date": "2025-02-04T14:46:40Z",
+      "scrape_date": "2025-02-05T00:30:07Z",
       "stabilities": [
         "unstable"
       ],
@@ -560,13 +687,13 @@
       "description": "Post-modern modal text editor",
       "install_id": "helix",
       "license": "MPL-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=3a228057f5b619feb3186e986dbe76278d707b6e",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=799ba5bffed04ced7067a91798353d360788b30d",
       "name": "helix-25.01.1",
       "pname": "helix",
-      "rev": "3a228057f5b619feb3186e986dbe76278d707b6e",
-      "rev_count": 746337,
-      "rev_date": "2025-02-01T11:46:30Z",
-      "scrape_date": "2025-02-02T00:30:00Z",
+      "rev": "799ba5bffed04ced7067a91798353d360788b30d",
+      "rev_count": 747653,
+      "rev_date": "2025-02-04T14:46:40Z",
+      "scrape_date": "2025-02-05T00:30:07Z",
       "stabilities": [
         "unstable"
       ],
@@ -589,13 +716,13 @@
       "description": "Post-modern modal text editor",
       "install_id": "helix",
       "license": "MPL-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=3a228057f5b619feb3186e986dbe76278d707b6e",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=799ba5bffed04ced7067a91798353d360788b30d",
       "name": "helix-25.01.1",
       "pname": "helix",
-      "rev": "3a228057f5b619feb3186e986dbe76278d707b6e",
-      "rev_count": 746337,
-      "rev_date": "2025-02-01T11:46:30Z",
-      "scrape_date": "2025-02-02T00:30:00Z",
+      "rev": "799ba5bffed04ced7067a91798353d360788b30d",
+      "rev_count": 747653,
+      "rev_date": "2025-02-04T14:46:40Z",
+      "scrape_date": "2025-02-05T00:30:07Z",
       "stabilities": [
         "unstable"
       ],
@@ -618,13 +745,13 @@
       "description": "Post-modern modal text editor",
       "install_id": "helix",
       "license": "MPL-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=3a228057f5b619feb3186e986dbe76278d707b6e",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=799ba5bffed04ced7067a91798353d360788b30d",
       "name": "helix-25.01.1",
       "pname": "helix",
-      "rev": "3a228057f5b619feb3186e986dbe76278d707b6e",
-      "rev_count": 746337,
-      "rev_date": "2025-02-01T11:46:30Z",
-      "scrape_date": "2025-02-02T00:30:00Z",
+      "rev": "799ba5bffed04ced7067a91798353d360788b30d",
+      "rev_count": 747653,
+      "rev_date": "2025-02-04T14:46:40Z",
+      "scrape_date": "2025-02-05T00:30:07Z",
       "stabilities": [
         "unstable"
       ],
@@ -647,13 +774,13 @@
       "description": "Post-modern modal text editor",
       "install_id": "helix",
       "license": "MPL-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=3a228057f5b619feb3186e986dbe76278d707b6e",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=799ba5bffed04ced7067a91798353d360788b30d",
       "name": "helix-25.01.1",
       "pname": "helix",
-      "rev": "3a228057f5b619feb3186e986dbe76278d707b6e",
-      "rev_count": 746337,
-      "rev_date": "2025-02-01T11:46:30Z",
-      "scrape_date": "2025-02-02T00:30:00Z",
+      "rev": "799ba5bffed04ced7067a91798353d360788b30d",
+      "rev_count": 747653,
+      "rev_date": "2025-02-04T14:46:40Z",
+      "scrape_date": "2025-02-05T00:30:07Z",
       "stabilities": [
         "unstable"
       ],
@@ -676,13 +803,13 @@
       "description": "Linux virtual machines (on macOS, in most cases)",
       "install_id": "lima",
       "license": "Apache-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=3a228057f5b619feb3186e986dbe76278d707b6e",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=799ba5bffed04ced7067a91798353d360788b30d",
       "name": "lima-1.0.3",
       "pname": "lima",
-      "rev": "3a228057f5b619feb3186e986dbe76278d707b6e",
-      "rev_count": 746337,
-      "rev_date": "2025-02-01T11:46:30Z",
-      "scrape_date": "2025-02-02T00:30:00Z",
+      "rev": "799ba5bffed04ced7067a91798353d360788b30d",
+      "rev_count": 747653,
+      "rev_date": "2025-02-04T14:46:40Z",
+      "scrape_date": "2025-02-05T00:30:07Z",
       "stabilities": [
         "unstable"
       ],
@@ -701,17 +828,17 @@
     {
       "attr_path": "lima",
       "broken": false,
-      "derivation": "/nix/store/y3fr8g736m4225c6n17z7ivlyn42r6r7-lima-1.0.3.drv",
+      "derivation": "/nix/store/xginh74zqlixb7mv4ydw79p4dh2i2dvx-lima-1.0.3.drv",
       "description": "Linux virtual machines (on macOS, in most cases)",
       "install_id": "lima",
       "license": "Apache-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=3a228057f5b619feb3186e986dbe76278d707b6e",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=799ba5bffed04ced7067a91798353d360788b30d",
       "name": "lima-1.0.3",
       "pname": "lima",
-      "rev": "3a228057f5b619feb3186e986dbe76278d707b6e",
-      "rev_count": 746337,
-      "rev_date": "2025-02-01T11:46:30Z",
-      "scrape_date": "2025-02-02T00:30:00Z",
+      "rev": "799ba5bffed04ced7067a91798353d360788b30d",
+      "rev_count": 747653,
+      "rev_date": "2025-02-04T14:46:40Z",
+      "scrape_date": "2025-02-05T00:30:07Z",
       "stabilities": [
         "unstable"
       ],
@@ -721,7 +848,7 @@
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/2ijc36hzgb28lmnzg1m91df391y2hm26-lima-1.0.3"
+        "out": "/nix/store/x6z70waspa14phrnimxji9naqsnl65n3-lima-1.0.3"
       },
       "system": "aarch64-linux",
       "group": "toplevel",
@@ -734,13 +861,13 @@
       "description": "Linux virtual machines (on macOS, in most cases)",
       "install_id": "lima",
       "license": "Apache-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=3a228057f5b619feb3186e986dbe76278d707b6e",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=799ba5bffed04ced7067a91798353d360788b30d",
       "name": "lima-1.0.3",
       "pname": "lima",
-      "rev": "3a228057f5b619feb3186e986dbe76278d707b6e",
-      "rev_count": 746337,
-      "rev_date": "2025-02-01T11:46:30Z",
-      "scrape_date": "2025-02-02T00:30:00Z",
+      "rev": "799ba5bffed04ced7067a91798353d360788b30d",
+      "rev_count": 747653,
+      "rev_date": "2025-02-04T14:46:40Z",
+      "scrape_date": "2025-02-05T00:30:07Z",
       "stabilities": [
         "unstable"
       ],
@@ -759,17 +886,17 @@
     {
       "attr_path": "lima",
       "broken": false,
-      "derivation": "/nix/store/7rf7bn40g3bcci6wv5bd7gxam7md25f7-lima-1.0.3.drv",
+      "derivation": "/nix/store/0cjz86wdla2gl78pbd785pi65cv0fzb3-lima-1.0.3.drv",
       "description": "Linux virtual machines (on macOS, in most cases)",
       "install_id": "lima",
       "license": "Apache-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=3a228057f5b619feb3186e986dbe76278d707b6e",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=799ba5bffed04ced7067a91798353d360788b30d",
       "name": "lima-1.0.3",
       "pname": "lima",
-      "rev": "3a228057f5b619feb3186e986dbe76278d707b6e",
-      "rev_count": 746337,
-      "rev_date": "2025-02-01T11:46:30Z",
-      "scrape_date": "2025-02-02T00:30:00Z",
+      "rev": "799ba5bffed04ced7067a91798353d360788b30d",
+      "rev_count": 747653,
+      "rev_date": "2025-02-04T14:46:40Z",
+      "scrape_date": "2025-02-05T00:30:07Z",
       "stabilities": [
         "unstable"
       ],
@@ -779,7 +906,7 @@
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/d89wvvfcyjgdk4w7l4bak96pcq620dxq-lima-1.0.3"
+        "out": "/nix/store/2l7bsz7yy891pp7jnd13azsnfipkc4c7-lima-1.0.3"
       },
       "system": "x86_64-linux",
       "group": "toplevel",
@@ -792,13 +919,13 @@
       "description": "Inference of Meta's LLaMA model (and others) in pure C/C++",
       "install_id": "llama-cpp",
       "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=3a228057f5b619feb3186e986dbe76278d707b6e",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=799ba5bffed04ced7067a91798353d360788b30d",
       "name": "llama-cpp-4546",
       "pname": "llama-cpp",
-      "rev": "3a228057f5b619feb3186e986dbe76278d707b6e",
-      "rev_count": 746337,
-      "rev_date": "2025-02-01T11:46:30Z",
-      "scrape_date": "2025-02-02T00:30:00Z",
+      "rev": "799ba5bffed04ced7067a91798353d360788b30d",
+      "rev_count": 747653,
+      "rev_date": "2025-02-04T14:46:40Z",
+      "scrape_date": "2025-02-05T00:30:07Z",
       "stabilities": [
         "unstable"
       ],
@@ -821,13 +948,13 @@
       "description": "Inference of Meta's LLaMA model (and others) in pure C/C++",
       "install_id": "llama-cpp",
       "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=3a228057f5b619feb3186e986dbe76278d707b6e",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=799ba5bffed04ced7067a91798353d360788b30d",
       "name": "llama-cpp-4546",
       "pname": "llama-cpp",
-      "rev": "3a228057f5b619feb3186e986dbe76278d707b6e",
-      "rev_count": 746337,
-      "rev_date": "2025-02-01T11:46:30Z",
-      "scrape_date": "2025-02-02T00:30:00Z",
+      "rev": "799ba5bffed04ced7067a91798353d360788b30d",
+      "rev_count": 747653,
+      "rev_date": "2025-02-04T14:46:40Z",
+      "scrape_date": "2025-02-05T00:30:07Z",
       "stabilities": [
         "unstable"
       ],
@@ -850,13 +977,13 @@
       "description": "Inference of Meta's LLaMA model (and others) in pure C/C++",
       "install_id": "llama-cpp",
       "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=3a228057f5b619feb3186e986dbe76278d707b6e",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=799ba5bffed04ced7067a91798353d360788b30d",
       "name": "llama-cpp-4546",
       "pname": "llama-cpp",
-      "rev": "3a228057f5b619feb3186e986dbe76278d707b6e",
-      "rev_count": 746337,
-      "rev_date": "2025-02-01T11:46:30Z",
-      "scrape_date": "2025-02-02T00:30:00Z",
+      "rev": "799ba5bffed04ced7067a91798353d360788b30d",
+      "rev_count": 747653,
+      "rev_date": "2025-02-04T14:46:40Z",
+      "scrape_date": "2025-02-05T00:30:07Z",
       "stabilities": [
         "unstable"
       ],
@@ -879,13 +1006,13 @@
       "description": "Inference of Meta's LLaMA model (and others) in pure C/C++",
       "install_id": "llama-cpp",
       "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=3a228057f5b619feb3186e986dbe76278d707b6e",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=799ba5bffed04ced7067a91798353d360788b30d",
       "name": "llama-cpp-4546",
       "pname": "llama-cpp",
-      "rev": "3a228057f5b619feb3186e986dbe76278d707b6e",
-      "rev_count": 746337,
-      "rev_date": "2025-02-01T11:46:30Z",
-      "scrape_date": "2025-02-02T00:30:00Z",
+      "rev": "799ba5bffed04ced7067a91798353d360788b30d",
+      "rev_count": 747653,
+      "rev_date": "2025-02-04T14:46:40Z",
+      "scrape_date": "2025-02-05T00:30:07Z",
       "stabilities": [
         "unstable"
       ],
@@ -908,13 +1035,13 @@
       "description": "Get up and running with large language models locally",
       "install_id": "ollama",
       "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=3a228057f5b619feb3186e986dbe76278d707b6e",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=799ba5bffed04ced7067a91798353d360788b30d",
       "name": "ollama-0.5.7",
       "pname": "ollama",
-      "rev": "3a228057f5b619feb3186e986dbe76278d707b6e",
-      "rev_count": 746337,
-      "rev_date": "2025-02-01T11:46:30Z",
-      "scrape_date": "2025-02-02T00:30:00Z",
+      "rev": "799ba5bffed04ced7067a91798353d360788b30d",
+      "rev_count": 747653,
+      "rev_date": "2025-02-04T14:46:40Z",
+      "scrape_date": "2025-02-05T00:30:07Z",
       "stabilities": [
         "unstable"
       ],
@@ -937,13 +1064,13 @@
       "description": "Get up and running with large language models locally",
       "install_id": "ollama",
       "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=3a228057f5b619feb3186e986dbe76278d707b6e",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=799ba5bffed04ced7067a91798353d360788b30d",
       "name": "ollama-0.5.7",
       "pname": "ollama",
-      "rev": "3a228057f5b619feb3186e986dbe76278d707b6e",
-      "rev_count": 746337,
-      "rev_date": "2025-02-01T11:46:30Z",
-      "scrape_date": "2025-02-02T00:30:00Z",
+      "rev": "799ba5bffed04ced7067a91798353d360788b30d",
+      "rev_count": 747653,
+      "rev_date": "2025-02-04T14:46:40Z",
+      "scrape_date": "2025-02-05T00:30:07Z",
       "stabilities": [
         "unstable"
       ],
@@ -966,13 +1093,13 @@
       "description": "Get up and running with large language models locally",
       "install_id": "ollama",
       "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=3a228057f5b619feb3186e986dbe76278d707b6e",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=799ba5bffed04ced7067a91798353d360788b30d",
       "name": "ollama-0.5.7",
       "pname": "ollama",
-      "rev": "3a228057f5b619feb3186e986dbe76278d707b6e",
-      "rev_count": 746337,
-      "rev_date": "2025-02-01T11:46:30Z",
-      "scrape_date": "2025-02-02T00:30:00Z",
+      "rev": "799ba5bffed04ced7067a91798353d360788b30d",
+      "rev_count": 747653,
+      "rev_date": "2025-02-04T14:46:40Z",
+      "scrape_date": "2025-02-05T00:30:07Z",
       "stabilities": [
         "unstable"
       ],
@@ -995,13 +1122,13 @@
       "description": "Get up and running with large language models locally",
       "install_id": "ollama",
       "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=3a228057f5b619feb3186e986dbe76278d707b6e",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=799ba5bffed04ced7067a91798353d360788b30d",
       "name": "ollama-0.5.7",
       "pname": "ollama",
-      "rev": "3a228057f5b619feb3186e986dbe76278d707b6e",
-      "rev_count": 746337,
-      "rev_date": "2025-02-01T11:46:30Z",
-      "scrape_date": "2025-02-02T00:30:00Z",
+      "rev": "799ba5bffed04ced7067a91798353d360788b30d",
+      "rev_count": 747653,
+      "rev_date": "2025-02-04T14:46:40Z",
+      "scrape_date": "2025-02-05T00:30:07Z",
       "stabilities": [
         "unstable"
       ],
@@ -1024,13 +1151,13 @@
       "description": "Conversion between documentation formats",
       "install_id": "pandoc",
       "license": "GPL-2.0-or-later",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=3a228057f5b619feb3186e986dbe76278d707b6e",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=799ba5bffed04ced7067a91798353d360788b30d",
       "name": "pandoc-cli-3.1.11.1",
       "pname": "pandoc",
-      "rev": "3a228057f5b619feb3186e986dbe76278d707b6e",
-      "rev_count": 746337,
-      "rev_date": "2025-02-01T11:46:30Z",
-      "scrape_date": "2025-02-02T00:30:00Z",
+      "rev": "799ba5bffed04ced7067a91798353d360788b30d",
+      "rev_count": 747653,
+      "rev_date": "2025-02-04T14:46:40Z",
+      "scrape_date": "2025-02-05T00:30:07Z",
       "stabilities": [
         "unstable"
       ],
@@ -1053,13 +1180,13 @@
       "description": "Conversion between documentation formats",
       "install_id": "pandoc",
       "license": "GPL-2.0-or-later",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=3a228057f5b619feb3186e986dbe76278d707b6e",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=799ba5bffed04ced7067a91798353d360788b30d",
       "name": "pandoc-cli-3.1.11.1",
       "pname": "pandoc",
-      "rev": "3a228057f5b619feb3186e986dbe76278d707b6e",
-      "rev_count": 746337,
-      "rev_date": "2025-02-01T11:46:30Z",
-      "scrape_date": "2025-02-02T00:30:00Z",
+      "rev": "799ba5bffed04ced7067a91798353d360788b30d",
+      "rev_count": 747653,
+      "rev_date": "2025-02-04T14:46:40Z",
+      "scrape_date": "2025-02-05T00:30:07Z",
       "stabilities": [
         "unstable"
       ],
@@ -1082,13 +1209,13 @@
       "description": "Conversion between documentation formats",
       "install_id": "pandoc",
       "license": "GPL-2.0-or-later",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=3a228057f5b619feb3186e986dbe76278d707b6e",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=799ba5bffed04ced7067a91798353d360788b30d",
       "name": "pandoc-cli-3.1.11.1",
       "pname": "pandoc",
-      "rev": "3a228057f5b619feb3186e986dbe76278d707b6e",
-      "rev_count": 746337,
-      "rev_date": "2025-02-01T11:46:30Z",
-      "scrape_date": "2025-02-02T00:30:00Z",
+      "rev": "799ba5bffed04ced7067a91798353d360788b30d",
+      "rev_count": 747653,
+      "rev_date": "2025-02-04T14:46:40Z",
+      "scrape_date": "2025-02-05T00:30:07Z",
       "stabilities": [
         "unstable"
       ],
@@ -1111,13 +1238,13 @@
       "description": "Conversion between documentation formats",
       "install_id": "pandoc",
       "license": "GPL-2.0-or-later",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=3a228057f5b619feb3186e986dbe76278d707b6e",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=799ba5bffed04ced7067a91798353d360788b30d",
       "name": "pandoc-cli-3.1.11.1",
       "pname": "pandoc",
-      "rev": "3a228057f5b619feb3186e986dbe76278d707b6e",
-      "rev_count": 746337,
-      "rev_date": "2025-02-01T11:46:30Z",
-      "scrape_date": "2025-02-02T00:30:00Z",
+      "rev": "799ba5bffed04ced7067a91798353d360788b30d",
+      "rev_count": 747653,
+      "rev_date": "2025-02-04T14:46:40Z",
+      "scrape_date": "2025-02-05T00:30:07Z",
       "stabilities": [
         "unstable"
       ],
@@ -1140,13 +1267,13 @@
       "description": "Program for managing pods, containers and container images",
       "install_id": "podman",
       "license": "Apache-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=3a228057f5b619feb3186e986dbe76278d707b6e",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=799ba5bffed04ced7067a91798353d360788b30d",
       "name": "podman-5.3.1",
       "pname": "podman",
-      "rev": "3a228057f5b619feb3186e986dbe76278d707b6e",
-      "rev_count": 746337,
-      "rev_date": "2025-02-01T11:46:30Z",
-      "scrape_date": "2025-02-02T00:30:00Z",
+      "rev": "799ba5bffed04ced7067a91798353d360788b30d",
+      "rev_count": 747653,
+      "rev_date": "2025-02-04T14:46:40Z",
+      "scrape_date": "2025-02-05T00:30:07Z",
       "stabilities": [
         "unstable"
       ],
@@ -1171,13 +1298,13 @@
       "description": "Program for managing pods, containers and container images",
       "install_id": "podman",
       "license": "Apache-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=3a228057f5b619feb3186e986dbe76278d707b6e",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=799ba5bffed04ced7067a91798353d360788b30d",
       "name": "podman-5.3.1",
       "pname": "podman",
-      "rev": "3a228057f5b619feb3186e986dbe76278d707b6e",
-      "rev_count": 746337,
-      "rev_date": "2025-02-01T11:46:30Z",
-      "scrape_date": "2025-02-02T00:30:00Z",
+      "rev": "799ba5bffed04ced7067a91798353d360788b30d",
+      "rev_count": 747653,
+      "rev_date": "2025-02-04T14:46:40Z",
+      "scrape_date": "2025-02-05T00:30:07Z",
       "stabilities": [
         "unstable"
       ],
@@ -1202,13 +1329,13 @@
       "description": "Program for managing pods, containers and container images",
       "install_id": "podman",
       "license": "Apache-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=3a228057f5b619feb3186e986dbe76278d707b6e",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=799ba5bffed04ced7067a91798353d360788b30d",
       "name": "podman-5.3.1",
       "pname": "podman",
-      "rev": "3a228057f5b619feb3186e986dbe76278d707b6e",
-      "rev_count": 746337,
-      "rev_date": "2025-02-01T11:46:30Z",
-      "scrape_date": "2025-02-02T00:30:00Z",
+      "rev": "799ba5bffed04ced7067a91798353d360788b30d",
+      "rev_count": 747653,
+      "rev_date": "2025-02-04T14:46:40Z",
+      "scrape_date": "2025-02-05T00:30:07Z",
       "stabilities": [
         "unstable"
       ],
@@ -1233,13 +1360,13 @@
       "description": "Program for managing pods, containers and container images",
       "install_id": "podman",
       "license": "Apache-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=3a228057f5b619feb3186e986dbe76278d707b6e",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=799ba5bffed04ced7067a91798353d360788b30d",
       "name": "podman-5.3.1",
       "pname": "podman",
-      "rev": "3a228057f5b619feb3186e986dbe76278d707b6e",
-      "rev_count": 746337,
-      "rev_date": "2025-02-01T11:46:30Z",
-      "scrape_date": "2025-02-02T00:30:00Z",
+      "rev": "799ba5bffed04ced7067a91798353d360788b30d",
+      "rev_count": 747653,
+      "rev_date": "2025-02-04T14:46:40Z",
+      "scrape_date": "2025-02-05T00:30:07Z",
       "stabilities": [
         "unstable"
       ],
@@ -1258,19 +1385,135 @@
       "priority": 5
     },
     {
+      "attr_path": "nodePackages.prettier",
+      "broken": false,
+      "derivation": "/nix/store/yj9lfg2nmgjyaw0hzkph73nsr8ik5jy3-prettier-3.3.3.drv",
+      "description": "Prettier is an opinionated code formatter",
+      "install_id": "prettier",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=799ba5bffed04ced7067a91798353d360788b30d",
+      "name": "prettier-3.3.3",
+      "pname": "prettier",
+      "rev": "799ba5bffed04ced7067a91798353d360788b30d",
+      "rev_count": 747653,
+      "rev_date": "2025-02-04T14:46:40Z",
+      "scrape_date": "2025-02-05T00:30:07Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "3.3.3",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/7018mdjp14qr7vf66jwdxvxaxjvl48hn-prettier-3.3.3"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "nodePackages.prettier",
+      "broken": false,
+      "derivation": "/nix/store/8qr40xbgzcnb81isqmjanb5k1ldray58-prettier-3.3.3.drv",
+      "description": "Prettier is an opinionated code formatter",
+      "install_id": "prettier",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=799ba5bffed04ced7067a91798353d360788b30d",
+      "name": "prettier-3.3.3",
+      "pname": "prettier",
+      "rev": "799ba5bffed04ced7067a91798353d360788b30d",
+      "rev_count": 747653,
+      "rev_date": "2025-02-04T14:46:40Z",
+      "scrape_date": "2025-02-05T00:30:07Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "3.3.3",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/pysxyhskhjjsxiac0ha8zi08p2814rpi-prettier-3.3.3"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "nodePackages.prettier",
+      "broken": false,
+      "derivation": "/nix/store/wy77xv78ycfcsmakz44xn34q0100yqnz-prettier-3.3.3.drv",
+      "description": "Prettier is an opinionated code formatter",
+      "install_id": "prettier",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=799ba5bffed04ced7067a91798353d360788b30d",
+      "name": "prettier-3.3.3",
+      "pname": "prettier",
+      "rev": "799ba5bffed04ced7067a91798353d360788b30d",
+      "rev_count": 747653,
+      "rev_date": "2025-02-04T14:46:40Z",
+      "scrape_date": "2025-02-05T00:30:07Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "3.3.3",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/79qbg2kgcvji7k8whvw9k29cc84wvj3w-prettier-3.3.3"
+      },
+      "system": "x86_64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "nodePackages.prettier",
+      "broken": false,
+      "derivation": "/nix/store/k5i5d6vimjmf3ayg0zprnkwzxn5gx0c1-prettier-3.3.3.drv",
+      "description": "Prettier is an opinionated code formatter",
+      "install_id": "prettier",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=799ba5bffed04ced7067a91798353d360788b30d",
+      "name": "prettier-3.3.3",
+      "pname": "prettier",
+      "rev": "799ba5bffed04ced7067a91798353d360788b30d",
+      "rev_count": 747653,
+      "rev_date": "2025-02-04T14:46:40Z",
+      "scrape_date": "2025-02-05T00:30:07Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "3.3.3",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/rrmdwy79qyc61lxmrggvrpmdmrq3zym7-prettier-3.3.3"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
       "attr_path": "raycast",
       "broken": false,
       "derivation": "/nix/store/fc2diizg3b38553lj83bp197iaklibz2-raycast-1.90.0.drv",
       "description": "Control your tools with a few keystrokes",
       "install_id": "raycast",
       "license": "Unfree",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=3a228057f5b619feb3186e986dbe76278d707b6e",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=799ba5bffed04ced7067a91798353d360788b30d",
       "name": "raycast-1.90.0",
       "pname": "raycast",
-      "rev": "3a228057f5b619feb3186e986dbe76278d707b6e",
-      "rev_count": 746337,
-      "rev_date": "2025-02-01T11:46:30Z",
-      "scrape_date": "2025-02-02T00:30:00Z",
+      "rev": "799ba5bffed04ced7067a91798353d360788b30d",
+      "rev_count": 747653,
+      "rev_date": "2025-02-04T14:46:40Z",
+      "scrape_date": "2025-02-05T00:30:07Z",
       "stabilities": [
         "unstable"
       ],
@@ -1293,13 +1536,13 @@
       "description": "Control your tools with a few keystrokes",
       "install_id": "raycast",
       "license": "Unfree",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=3a228057f5b619feb3186e986dbe76278d707b6e",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=799ba5bffed04ced7067a91798353d360788b30d",
       "name": "raycast-1.90.0",
       "pname": "raycast",
-      "rev": "3a228057f5b619feb3186e986dbe76278d707b6e",
-      "rev_count": 746337,
-      "rev_date": "2025-02-01T11:46:30Z",
-      "scrape_date": "2025-02-02T00:30:00Z",
+      "rev": "799ba5bffed04ced7067a91798353d360788b30d",
+      "rev_count": 747653,
+      "rev_date": "2025-02-04T14:46:40Z",
+      "scrape_date": "2025-02-05T00:30:07Z",
       "stabilities": [
         "unstable"
       ],
@@ -1322,13 +1565,13 @@
       "description": "General-purpose data compression software, successor of LZMA",
       "install_id": "xz",
       "license": "[ GPL-2.0-or-later, LGPL-2.1-or-later ]",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=3a228057f5b619feb3186e986dbe76278d707b6e",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=799ba5bffed04ced7067a91798353d360788b30d",
       "name": "xz-5.6.3",
       "pname": "xz",
-      "rev": "3a228057f5b619feb3186e986dbe76278d707b6e",
-      "rev_count": 746337,
-      "rev_date": "2025-02-01T11:46:30Z",
-      "scrape_date": "2025-02-02T00:30:00Z",
+      "rev": "799ba5bffed04ced7067a91798353d360788b30d",
+      "rev_count": 747653,
+      "rev_date": "2025-02-04T14:46:40Z",
+      "scrape_date": "2025-02-05T00:30:07Z",
       "stabilities": [
         "unstable"
       ],
@@ -1356,13 +1599,13 @@
       "description": "General-purpose data compression software, successor of LZMA",
       "install_id": "xz",
       "license": "[ GPL-2.0-or-later, LGPL-2.1-or-later ]",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=3a228057f5b619feb3186e986dbe76278d707b6e",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=799ba5bffed04ced7067a91798353d360788b30d",
       "name": "xz-5.6.3",
       "pname": "xz",
-      "rev": "3a228057f5b619feb3186e986dbe76278d707b6e",
-      "rev_count": 746337,
-      "rev_date": "2025-02-01T11:46:30Z",
-      "scrape_date": "2025-02-02T00:30:00Z",
+      "rev": "799ba5bffed04ced7067a91798353d360788b30d",
+      "rev_count": 747653,
+      "rev_date": "2025-02-04T14:46:40Z",
+      "scrape_date": "2025-02-05T00:30:07Z",
       "stabilities": [
         "unstable"
       ],
@@ -1390,13 +1633,13 @@
       "description": "General-purpose data compression software, successor of LZMA",
       "install_id": "xz",
       "license": "[ GPL-2.0-or-later, LGPL-2.1-or-later ]",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=3a228057f5b619feb3186e986dbe76278d707b6e",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=799ba5bffed04ced7067a91798353d360788b30d",
       "name": "xz-5.6.3",
       "pname": "xz",
-      "rev": "3a228057f5b619feb3186e986dbe76278d707b6e",
-      "rev_count": 746337,
-      "rev_date": "2025-02-01T11:46:30Z",
-      "scrape_date": "2025-02-02T00:30:00Z",
+      "rev": "799ba5bffed04ced7067a91798353d360788b30d",
+      "rev_count": 747653,
+      "rev_date": "2025-02-04T14:46:40Z",
+      "scrape_date": "2025-02-05T00:30:07Z",
       "stabilities": [
         "unstable"
       ],
@@ -1424,13 +1667,13 @@
       "description": "General-purpose data compression software, successor of LZMA",
       "install_id": "xz",
       "license": "[ GPL-2.0-or-later, LGPL-2.1-or-later ]",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=3a228057f5b619feb3186e986dbe76278d707b6e",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=799ba5bffed04ced7067a91798353d360788b30d",
       "name": "xz-5.6.3",
       "pname": "xz",
-      "rev": "3a228057f5b619feb3186e986dbe76278d707b6e",
-      "rev_count": 746337,
-      "rev_date": "2025-02-01T11:46:30Z",
-      "scrape_date": "2025-02-02T00:30:00Z",
+      "rev": "799ba5bffed04ced7067a91798353d360788b30d",
+      "rev_count": 747653,
+      "rev_date": "2025-02-04T14:46:40Z",
+      "scrape_date": "2025-02-05T00:30:07Z",
       "stabilities": [
         "unstable"
       ],

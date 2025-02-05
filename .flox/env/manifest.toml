@@ -28,6 +28,8 @@ ollama.pkg-path = "ollama"
 huggingface-hub = { pkg-path = "python39Packages.huggingface-hub", pkg-group = "hg" }
 llama-cpp.pkg-path = "llama-cpp"
 pandoc.pkg-path = "pandoc"
+nodejs = { pkg-path = "nodejs", pkg-group = "node-vscode"}
+prettier.pkg-path = "nodePackages.prettier"
 # gum.pkg-path = "gum"
 # gum.version = "^0.14.5"
 

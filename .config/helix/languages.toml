@@ -51,3 +51,11 @@ name = "terraform"
 language-servers = ["terraform-ls", "lsp-ai"]
 scope = "source.tf"
 file-types = ["tf"]
+
+[[language]]
+name = "sql"
+language-servers = ["lsp-ai"]
+
+[[language]]
+name = "json"
+formatter = { command = 'prettier', args = ["--parser", "json"] }
