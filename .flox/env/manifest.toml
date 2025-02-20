@@ -69,6 +69,7 @@ common = '''
   alias roks='ibmcloud oc'
   alias vpc='ibmcloud is'
   alias c='podman ps'
+  alias gi='gh issue'
   alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
   alias ls='exa'
   autoload -U colors; colors
