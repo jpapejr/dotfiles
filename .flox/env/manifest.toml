@@ -45,6 +45,7 @@ utm.systems = ["aarch64-darwin", "x86_64-darwin"]
 # INTRO_MESSAGE = "It's gettin' Flox in here"
 EDITOR="hx"
 FLOX_PROMPT_DISABLE="1"
+GH_MDWIDTH="150"
 
 ## Activation Hook ---------------------------------------------------
 ##  ... run by _bash_ shell when you run 'flox activate'.

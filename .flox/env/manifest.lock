@@ -65,7 +65,8 @@
     },
     "vars": {
       "EDITOR": "hx",
-      "FLOX_PROMPT_DISABLE": "1"
+      "FLOX_PROMPT_DISABLE": "1",
+      "GH_MDWIDTH": "150"
     },
     "hook": {},
     "profile": {
