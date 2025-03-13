@@ -33,6 +33,10 @@ starship.pkg-path = "starship"
 github-cli.pkg-path = "github-cli"
 utm.pkg-path = "utm"
 utm.systems = ["aarch64-darwin", "x86_64-darwin"]
+vscode.pkg-path = "vscode"
+ngrok.pkg-path = "ngrok"
+skopeo.pkg-path = "skopeo"
+openshift.pkg-path = "openshift"
 # gum.pkg-path = "gum"
 # gum.version = "^0.14.5"
 

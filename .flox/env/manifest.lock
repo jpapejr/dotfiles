@@ -26,12 +26,18 @@
       "llama-cpp": {
         "pkg-path": "llama-cpp"
       },
+      "ngrok": {
+        "pkg-path": "ngrok"
+      },
       "nodejs": {
         "pkg-path": "nodejs",
         "pkg-group": "node-vscode"
       },
       "ollama": {
         "pkg-path": "ollama"
+      },
+      "openshift": {
+        "pkg-path": "openshift"
       },
       "pandoc": {
         "pkg-path": "pandoc"
@@ -49,6 +55,9 @@
           "x86_64-darwin"
         ]
       },
+      "skopeo": {
+        "pkg-path": "skopeo"
+      },
       "starship": {
         "pkg-path": "starship"
       },
@@ -58,6 +67,9 @@
           "aarch64-darwin",
           "x86_64-darwin"
         ]
+      },
+      "vscode": {
+        "pkg-path": "vscode"
       },
       "xz": {
         "pkg-path": "xz"
@@ -473,6 +485,7 @@
       "rev_date": "2025-02-18T08:17:47Z",
       "scrape_date": "2025-02-20T02:25:42Z",
       "stabilities": [
+        "stable",
         "staging",
         "unstable"
       ],
@@ -503,6 +516,7 @@
       "rev_date": "2025-02-18T08:17:47Z",
       "scrape_date": "2025-02-20T02:25:42Z",
       "stabilities": [
+        "stable",
         "staging",
         "unstable"
       ],
@@ -533,6 +547,7 @@
       "rev_date": "2025-02-18T08:17:47Z",
       "scrape_date": "2025-02-20T02:25:42Z",
       "stabilities": [
+        "stable",
         "staging",
         "unstable"
       ],
@@ -563,6 +578,7 @@
       "rev_date": "2025-02-18T08:17:47Z",
       "scrape_date": "2025-02-20T02:25:42Z",
       "stabilities": [
+        "stable",
         "staging",
         "unstable"
       ],
@@ -593,6 +609,7 @@
       "rev_date": "2025-02-18T08:17:47Z",
       "scrape_date": "2025-02-20T02:25:42Z",
       "stabilities": [
+        "stable",
         "staging",
         "unstable"
       ],
@@ -623,6 +640,7 @@
       "rev_date": "2025-02-18T08:17:47Z",
       "scrape_date": "2025-02-20T02:25:42Z",
       "stabilities": [
+        "stable",
         "staging",
         "unstable"
       ],
@@ -653,6 +671,7 @@
       "rev_date": "2025-02-18T08:17:47Z",
       "scrape_date": "2025-02-20T02:25:42Z",
       "stabilities": [
+        "stable",
         "staging",
         "unstable"
       ],
@@ -683,6 +702,7 @@
       "rev_date": "2025-02-18T08:17:47Z",
       "scrape_date": "2025-02-20T02:25:42Z",
       "stabilities": [
+        "stable",
         "staging",
         "unstable"
       ],
@@ -713,6 +733,7 @@
       "rev_date": "2025-02-18T08:17:47Z",
       "scrape_date": "2025-02-20T02:25:42Z",
       "stabilities": [
+        "stable",
         "staging",
         "unstable"
       ],
@@ -743,6 +764,7 @@
       "rev_date": "2025-02-18T08:17:47Z",
       "scrape_date": "2025-02-20T02:25:42Z",
       "stabilities": [
+        "stable",
         "staging",
         "unstable"
       ],
@@ -773,6 +795,7 @@
       "rev_date": "2025-02-18T08:17:47Z",
       "scrape_date": "2025-02-20T02:25:42Z",
       "stabilities": [
+        "stable",
         "staging",
         "unstable"
       ],
@@ -803,6 +826,7 @@
       "rev_date": "2025-02-18T08:17:47Z",
       "scrape_date": "2025-02-20T02:25:42Z",
       "stabilities": [
+        "stable",
         "staging",
         "unstable"
       ],
@@ -833,6 +857,7 @@
       "rev_date": "2025-02-18T08:17:47Z",
       "scrape_date": "2025-02-20T02:25:42Z",
       "stabilities": [
+        "stable",
         "staging",
         "unstable"
       ],
@@ -863,6 +888,7 @@
       "rev_date": "2025-02-18T08:17:47Z",
       "scrape_date": "2025-02-20T02:25:42Z",
       "stabilities": [
+        "stable",
         "staging",
         "unstable"
       ],
@@ -893,6 +919,7 @@
       "rev_date": "2025-02-18T08:17:47Z",
       "scrape_date": "2025-02-20T02:25:42Z",
       "stabilities": [
+        "stable",
         "staging",
         "unstable"
       ],
@@ -923,6 +950,7 @@
       "rev_date": "2025-02-18T08:17:47Z",
       "scrape_date": "2025-02-20T02:25:42Z",
       "stabilities": [
+        "stable",
         "staging",
         "unstable"
       ],
@@ -953,6 +981,7 @@
       "rev_date": "2025-02-18T08:17:47Z",
       "scrape_date": "2025-02-20T02:25:42Z",
       "stabilities": [
+        "stable",
         "staging",
         "unstable"
       ],
@@ -983,6 +1012,7 @@
       "rev_date": "2025-02-18T08:17:47Z",
       "scrape_date": "2025-02-20T02:25:42Z",
       "stabilities": [
+        "stable",
         "staging",
         "unstable"
       ],
@@ -1013,6 +1043,7 @@
       "rev_date": "2025-02-18T08:17:47Z",
       "scrape_date": "2025-02-20T02:25:42Z",
       "stabilities": [
+        "stable",
         "staging",
         "unstable"
       ],
@@ -1043,6 +1074,7 @@
       "rev_date": "2025-02-18T08:17:47Z",
       "scrape_date": "2025-02-20T02:25:42Z",
       "stabilities": [
+        "stable",
         "staging",
         "unstable"
       ],
@@ -1053,6 +1085,130 @@
       ],
       "outputs": {
         "out": "/nix/store/4llpl5d66ksns0dnrbjxvm78p61sphkj-llama-cpp-4731"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "ngrok",
+      "broken": false,
+      "derivation": "/nix/store/8y88qa4q1rqlvmr2wm9v6ja2p5mp19r5-ngrok-3.19.1.drv",
+      "description": "Allows you to expose a web server running on your local machine to the internet",
+      "install_id": "ngrok",
+      "license": "Unfree",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=73cf49b8ad837ade2de76f87eb53fc85ed5d4680",
+      "name": "ngrok-3.19.1",
+      "pname": "ngrok",
+      "rev": "73cf49b8ad837ade2de76f87eb53fc85ed5d4680",
+      "rev_count": 755230,
+      "rev_date": "2025-02-18T08:17:47Z",
+      "scrape_date": "2025-02-20T02:25:42Z",
+      "stabilities": [
+        "stable",
+        "staging",
+        "unstable"
+      ],
+      "unfree": true,
+      "version": "3.19.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/pbjmr74hmp534qwn23kz3ra1nvi78d0r-ngrok-3.19.1"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "ngrok",
+      "broken": false,
+      "derivation": "/nix/store/0aysdbq4ivg0ksvvskbbaxyhbjwhzww5-ngrok-3.19.1.drv",
+      "description": "Allows you to expose a web server running on your local machine to the internet",
+      "install_id": "ngrok",
+      "license": "Unfree",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=73cf49b8ad837ade2de76f87eb53fc85ed5d4680",
+      "name": "ngrok-3.19.1",
+      "pname": "ngrok",
+      "rev": "73cf49b8ad837ade2de76f87eb53fc85ed5d4680",
+      "rev_count": 755230,
+      "rev_date": "2025-02-18T08:17:47Z",
+      "scrape_date": "2025-02-20T02:25:42Z",
+      "stabilities": [
+        "stable",
+        "staging",
+        "unstable"
+      ],
+      "unfree": true,
+      "version": "3.19.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/25bg1p43bl1ylfwy5mhqqgl3lfvacdsb-ngrok-3.19.1"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "ngrok",
+      "broken": false,
+      "derivation": "/nix/store/55cv3s1p5bja7s9la2gdccz1sis1xaf8-ngrok-3.19.1.drv",
+      "description": "Allows you to expose a web server running on your local machine to the internet",
+      "install_id": "ngrok",
+      "license": "Unfree",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=73cf49b8ad837ade2de76f87eb53fc85ed5d4680",
+      "name": "ngrok-3.19.1",
+      "pname": "ngrok",
+      "rev": "73cf49b8ad837ade2de76f87eb53fc85ed5d4680",
+      "rev_count": 755230,
+      "rev_date": "2025-02-18T08:17:47Z",
+      "scrape_date": "2025-02-20T02:25:42Z",
+      "stabilities": [
+        "stable",
+        "staging",
+        "unstable"
+      ],
+      "unfree": true,
+      "version": "3.19.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/vpdwkhb5ibh0lbh912vnhh2h9ks76iqb-ngrok-3.19.1"
+      },
+      "system": "x86_64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "ngrok",
+      "broken": false,
+      "derivation": "/nix/store/ih3ay66hf77v5ch2n88z072fc3c9fpcw-ngrok-3.19.1.drv",
+      "description": "Allows you to expose a web server running on your local machine to the internet",
+      "install_id": "ngrok",
+      "license": "Unfree",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=73cf49b8ad837ade2de76f87eb53fc85ed5d4680",
+      "name": "ngrok-3.19.1",
+      "pname": "ngrok",
+      "rev": "73cf49b8ad837ade2de76f87eb53fc85ed5d4680",
+      "rev_count": 755230,
+      "rev_date": "2025-02-18T08:17:47Z",
+      "scrape_date": "2025-02-20T02:25:42Z",
+      "stabilities": [
+        "stable",
+        "staging",
+        "unstable"
+      ],
+      "unfree": true,
+      "version": "3.19.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/7q4pbyfavlym4f7k3h38lwzinvs7h0b0-ngrok-3.19.1"
       },
       "system": "x86_64-linux",
       "group": "toplevel",
@@ -1073,6 +1229,7 @@
       "rev_date": "2025-02-18T08:17:47Z",
       "scrape_date": "2025-02-20T02:25:42Z",
       "stabilities": [
+        "stable",
         "staging",
         "unstable"
       ],
@@ -1103,6 +1260,7 @@
       "rev_date": "2025-02-18T08:17:47Z",
       "scrape_date": "2025-02-20T02:25:42Z",
       "stabilities": [
+        "stable",
         "staging",
         "unstable"
       ],
@@ -1133,6 +1291,7 @@
       "rev_date": "2025-02-18T08:17:47Z",
       "scrape_date": "2025-02-20T02:25:42Z",
       "stabilities": [
+        "stable",
         "staging",
         "unstable"
       ],
@@ -1163,6 +1322,7 @@
       "rev_date": "2025-02-18T08:17:47Z",
       "scrape_date": "2025-02-20T02:25:42Z",
       "stabilities": [
+        "stable",
         "staging",
         "unstable"
       ],
@@ -1173,6 +1333,130 @@
       ],
       "outputs": {
         "out": "/nix/store/8xbzv1n19kkpk5lxxqkp018pj9zjh16x-ollama-0.5.7"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "openshift",
+      "broken": false,
+      "derivation": "/nix/store/gm5m4aw2k9jhlg8gmakb8l360q84jfwv-openshift-4.16.0.drv",
+      "description": "Build, deploy, and manage your applications with Docker and Kubernetes",
+      "install_id": "openshift",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=73cf49b8ad837ade2de76f87eb53fc85ed5d4680",
+      "name": "openshift-4.16.0",
+      "pname": "openshift",
+      "rev": "73cf49b8ad837ade2de76f87eb53fc85ed5d4680",
+      "rev_count": 755230,
+      "rev_date": "2025-02-18T08:17:47Z",
+      "scrape_date": "2025-02-20T02:25:42Z",
+      "stabilities": [
+        "stable",
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "4.16.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/9an7xi647ibkww3xhp8dyq5pyx46zxy1-openshift-4.16.0"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "openshift",
+      "broken": false,
+      "derivation": "/nix/store/543ph66hnbp7glq7bwnpfy3q0z16c3rq-openshift-4.16.0.drv",
+      "description": "Build, deploy, and manage your applications with Docker and Kubernetes",
+      "install_id": "openshift",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=73cf49b8ad837ade2de76f87eb53fc85ed5d4680",
+      "name": "openshift-4.16.0",
+      "pname": "openshift",
+      "rev": "73cf49b8ad837ade2de76f87eb53fc85ed5d4680",
+      "rev_count": 755230,
+      "rev_date": "2025-02-18T08:17:47Z",
+      "scrape_date": "2025-02-20T02:25:42Z",
+      "stabilities": [
+        "stable",
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "4.16.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/0x1qy4idxsg9gh7fpwvymsryhpawnbzj-openshift-4.16.0"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "openshift",
+      "broken": false,
+      "derivation": "/nix/store/5jjd4ghvmwanjxnbbwijrggbjj57i4nb-openshift-4.16.0.drv",
+      "description": "Build, deploy, and manage your applications with Docker and Kubernetes",
+      "install_id": "openshift",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=73cf49b8ad837ade2de76f87eb53fc85ed5d4680",
+      "name": "openshift-4.16.0",
+      "pname": "openshift",
+      "rev": "73cf49b8ad837ade2de76f87eb53fc85ed5d4680",
+      "rev_count": 755230,
+      "rev_date": "2025-02-18T08:17:47Z",
+      "scrape_date": "2025-02-20T02:25:42Z",
+      "stabilities": [
+        "stable",
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "4.16.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/ckg2v1whq0bhlfnpqbxjcpbrv768zpf8-openshift-4.16.0"
+      },
+      "system": "x86_64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "openshift",
+      "broken": false,
+      "derivation": "/nix/store/44bgiccdhf1fy7ggjifx0hb4nb3czlx7-openshift-4.16.0.drv",
+      "description": "Build, deploy, and manage your applications with Docker and Kubernetes",
+      "install_id": "openshift",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=73cf49b8ad837ade2de76f87eb53fc85ed5d4680",
+      "name": "openshift-4.16.0",
+      "pname": "openshift",
+      "rev": "73cf49b8ad837ade2de76f87eb53fc85ed5d4680",
+      "rev_count": 755230,
+      "rev_date": "2025-02-18T08:17:47Z",
+      "scrape_date": "2025-02-20T02:25:42Z",
+      "stabilities": [
+        "stable",
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "4.16.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/bl9hv6cckd92a5xhypcsmijzdwz38qpa-openshift-4.16.0"
       },
       "system": "x86_64-linux",
       "group": "toplevel",
@@ -1193,6 +1477,7 @@
       "rev_date": "2025-02-18T08:17:47Z",
       "scrape_date": "2025-02-20T02:25:42Z",
       "stabilities": [
+        "stable",
         "staging",
         "unstable"
       ],
@@ -1223,6 +1508,7 @@
       "rev_date": "2025-02-18T08:17:47Z",
       "scrape_date": "2025-02-20T02:25:42Z",
       "stabilities": [
+        "stable",
         "staging",
         "unstable"
       ],
@@ -1253,6 +1539,7 @@
       "rev_date": "2025-02-18T08:17:47Z",
       "scrape_date": "2025-02-20T02:25:42Z",
       "stabilities": [
+        "stable",
         "staging",
         "unstable"
       ],
@@ -1283,6 +1570,7 @@
       "rev_date": "2025-02-18T08:17:47Z",
       "scrape_date": "2025-02-20T02:25:42Z",
       "stabilities": [
+        "stable",
         "staging",
         "unstable"
       ],
@@ -1313,6 +1601,7 @@
       "rev_date": "2025-02-18T08:17:47Z",
       "scrape_date": "2025-02-20T02:25:42Z",
       "stabilities": [
+        "stable",
         "staging",
         "unstable"
       ],
@@ -1345,6 +1634,7 @@
       "rev_date": "2025-02-18T08:17:47Z",
       "scrape_date": "2025-02-20T02:25:42Z",
       "stabilities": [
+        "stable",
         "staging",
         "unstable"
       ],
@@ -1377,6 +1667,7 @@
       "rev_date": "2025-02-18T08:17:47Z",
       "scrape_date": "2025-02-20T02:25:42Z",
       "stabilities": [
+        "stable",
         "staging",
         "unstable"
       ],
@@ -1409,6 +1700,7 @@
       "rev_date": "2025-02-18T08:17:47Z",
       "scrape_date": "2025-02-20T02:25:42Z",
       "stabilities": [
+        "stable",
         "staging",
         "unstable"
       ],
@@ -1441,6 +1733,7 @@
       "rev_date": "2025-02-18T08:17:47Z",
       "scrape_date": "2025-02-20T02:25:42Z",
       "stabilities": [
+        "stable",
         "staging",
         "unstable"
       ],
@@ -1471,6 +1764,7 @@
       "rev_date": "2025-02-18T08:17:47Z",
       "scrape_date": "2025-02-20T02:25:42Z",
       "stabilities": [
+        "stable",
         "staging",
         "unstable"
       ],
@@ -1501,6 +1795,7 @@
       "rev_date": "2025-02-18T08:17:47Z",
       "scrape_date": "2025-02-20T02:25:42Z",
       "stabilities": [
+        "stable",
         "staging",
         "unstable"
       ],
@@ -1531,6 +1826,7 @@
       "rev_date": "2025-02-18T08:17:47Z",
       "scrape_date": "2025-02-20T02:25:42Z",
       "stabilities": [
+        "stable",
         "staging",
         "unstable"
       ],
@@ -1561,6 +1857,7 @@
       "rev_date": "2025-02-18T08:17:47Z",
       "scrape_date": "2025-02-20T02:25:42Z",
       "stabilities": [
+        "stable",
         "staging",
         "unstable"
       ],
@@ -1591,6 +1888,7 @@
       "rev_date": "2025-02-18T08:17:47Z",
       "scrape_date": "2025-02-20T02:25:42Z",
       "stabilities": [
+        "stable",
         "staging",
         "unstable"
       ],
@@ -1603,6 +1901,138 @@
         "out": "/nix/store/f02zin73chsg8448frlvk7xqpibz2dr3-raycast-1.91.2"
       },
       "system": "x86_64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "skopeo",
+      "broken": false,
+      "derivation": "/nix/store/labnz0qrd2gmgv6ca6qjzfk8k67vvfdb-skopeo-1.18.0.drv",
+      "description": "Command line utility for various operations on container images and image repositories",
+      "install_id": "skopeo",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=73cf49b8ad837ade2de76f87eb53fc85ed5d4680",
+      "name": "skopeo-1.18.0",
+      "pname": "skopeo",
+      "rev": "73cf49b8ad837ade2de76f87eb53fc85ed5d4680",
+      "rev_count": 755230,
+      "rev_date": "2025-02-18T08:17:47Z",
+      "scrape_date": "2025-02-20T02:25:42Z",
+      "stabilities": [
+        "stable",
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.18.0",
+      "outputs_to_install": [
+        "man",
+        "out"
+      ],
+      "outputs": {
+        "man": "/nix/store/y0vp65gimnhrr9wapy76m7z8liivi5dr-skopeo-1.18.0-man",
+        "out": "/nix/store/552spzrkil35jhb5s3jpx3cs4wp3z745-skopeo-1.18.0"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "skopeo",
+      "broken": false,
+      "derivation": "/nix/store/vh52sl8rhc1a4d9cvq15b0annc5srh98-skopeo-1.18.0.drv",
+      "description": "Command line utility for various operations on container images and image repositories",
+      "install_id": "skopeo",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=73cf49b8ad837ade2de76f87eb53fc85ed5d4680",
+      "name": "skopeo-1.18.0",
+      "pname": "skopeo",
+      "rev": "73cf49b8ad837ade2de76f87eb53fc85ed5d4680",
+      "rev_count": 755230,
+      "rev_date": "2025-02-18T08:17:47Z",
+      "scrape_date": "2025-02-20T02:25:42Z",
+      "stabilities": [
+        "stable",
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.18.0",
+      "outputs_to_install": [
+        "man",
+        "out"
+      ],
+      "outputs": {
+        "man": "/nix/store/knkjpqqhl970s16mkqkkqdcci1kxk5jk-skopeo-1.18.0-man",
+        "out": "/nix/store/nl57hx76dc4zn3mx7hqlv4b9hi72b7pz-skopeo-1.18.0"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "skopeo",
+      "broken": false,
+      "derivation": "/nix/store/30kyzqqkkzgqfqy8qaq3b14rxd7klm3r-skopeo-1.18.0.drv",
+      "description": "Command line utility for various operations on container images and image repositories",
+      "install_id": "skopeo",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=73cf49b8ad837ade2de76f87eb53fc85ed5d4680",
+      "name": "skopeo-1.18.0",
+      "pname": "skopeo",
+      "rev": "73cf49b8ad837ade2de76f87eb53fc85ed5d4680",
+      "rev_count": 755230,
+      "rev_date": "2025-02-18T08:17:47Z",
+      "scrape_date": "2025-02-20T02:25:42Z",
+      "stabilities": [
+        "stable",
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.18.0",
+      "outputs_to_install": [
+        "man",
+        "out"
+      ],
+      "outputs": {
+        "man": "/nix/store/2pvyl81w02q0z2n5q57z7x1q3nyix0na-skopeo-1.18.0-man",
+        "out": "/nix/store/kddkvxi68bpjpslyg6538fj3ay8r248n-skopeo-1.18.0"
+      },
+      "system": "x86_64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "skopeo",
+      "broken": false,
+      "derivation": "/nix/store/f8ynqahznxav6wbgz01w93ww85a5sfcc-skopeo-1.18.0.drv",
+      "description": "Command line utility for various operations on container images and image repositories",
+      "install_id": "skopeo",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=73cf49b8ad837ade2de76f87eb53fc85ed5d4680",
+      "name": "skopeo-1.18.0",
+      "pname": "skopeo",
+      "rev": "73cf49b8ad837ade2de76f87eb53fc85ed5d4680",
+      "rev_count": 755230,
+      "rev_date": "2025-02-18T08:17:47Z",
+      "scrape_date": "2025-02-20T02:25:42Z",
+      "stabilities": [
+        "stable",
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.18.0",
+      "outputs_to_install": [
+        "man",
+        "out"
+      ],
+      "outputs": {
+        "man": "/nix/store/yrwhvb8m18ql4b9mg7w0hnmryny2nkbq-skopeo-1.18.0-man",
+        "out": "/nix/store/9bm0w8bw75baad0v5vkl48hbbdky91ac-skopeo-1.18.0"
+      },
+      "system": "x86_64-linux",
       "group": "toplevel",
       "priority": 5
     },
@@ -1621,6 +2051,7 @@
       "rev_date": "2025-02-18T08:17:47Z",
       "scrape_date": "2025-02-20T02:25:42Z",
       "stabilities": [
+        "stable",
         "staging",
         "unstable"
       ],
@@ -1651,6 +2082,7 @@
       "rev_date": "2025-02-18T08:17:47Z",
       "scrape_date": "2025-02-20T02:25:42Z",
       "stabilities": [
+        "stable",
         "staging",
         "unstable"
       ],
@@ -1681,6 +2113,7 @@
       "rev_date": "2025-02-18T08:17:47Z",
       "scrape_date": "2025-02-20T02:25:42Z",
       "stabilities": [
+        "stable",
         "staging",
         "unstable"
       ],
@@ -1711,6 +2144,7 @@
       "rev_date": "2025-02-18T08:17:47Z",
       "scrape_date": "2025-02-20T02:25:42Z",
       "stabilities": [
+        "stable",
         "staging",
         "unstable"
       ],
@@ -1741,6 +2175,7 @@
       "rev_date": "2025-02-18T08:17:47Z",
       "scrape_date": "2025-02-20T02:25:42Z",
       "stabilities": [
+        "stable",
         "staging",
         "unstable"
       ],
@@ -1771,6 +2206,7 @@
       "rev_date": "2025-02-18T08:17:47Z",
       "scrape_date": "2025-02-20T02:25:42Z",
       "stabilities": [
+        "stable",
         "staging",
         "unstable"
       ],
@@ -1783,6 +2219,130 @@
         "out": "/nix/store/is34byla2m7n10fa5rpzq2288y7jbhr4-utm-4.6.4"
       },
       "system": "x86_64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "vscode",
+      "broken": false,
+      "derivation": "/nix/store/07y1iq7ham4sipsjib4qs5i74ps0ijba-vscode-1.97.2.drv",
+      "description": "Open source source code editor developed by Microsoft for Windows,\nLinux and macOS\n",
+      "install_id": "vscode",
+      "license": "Unfree",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=73cf49b8ad837ade2de76f87eb53fc85ed5d4680",
+      "name": "vscode-1.97.2",
+      "pname": "vscode",
+      "rev": "73cf49b8ad837ade2de76f87eb53fc85ed5d4680",
+      "rev_count": 755230,
+      "rev_date": "2025-02-18T08:17:47Z",
+      "scrape_date": "2025-02-20T02:25:42Z",
+      "stabilities": [
+        "stable",
+        "staging",
+        "unstable"
+      ],
+      "unfree": true,
+      "version": "1.97.2",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/v42413glqkxd9prq6jbzvwxzzb7vq0ps-vscode-1.97.2"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "vscode",
+      "broken": false,
+      "derivation": "/nix/store/yzm91msqnhnb7ha15qlyrxbr57vh5ibj-vscode-1.97.2.drv",
+      "description": "Open source source code editor developed by Microsoft for Windows,\nLinux and macOS\n",
+      "install_id": "vscode",
+      "license": "Unfree",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=73cf49b8ad837ade2de76f87eb53fc85ed5d4680",
+      "name": "vscode-1.97.2",
+      "pname": "vscode",
+      "rev": "73cf49b8ad837ade2de76f87eb53fc85ed5d4680",
+      "rev_count": 755230,
+      "rev_date": "2025-02-18T08:17:47Z",
+      "scrape_date": "2025-02-20T02:25:42Z",
+      "stabilities": [
+        "stable",
+        "staging",
+        "unstable"
+      ],
+      "unfree": true,
+      "version": "1.97.2",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/nygpcs0h70wa4381l983xx48r0jlzwld-vscode-1.97.2"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "vscode",
+      "broken": false,
+      "derivation": "/nix/store/alk3ar67dpj5pqhdmr7nirdi5yh022mk-vscode-1.97.2.drv",
+      "description": "Open source source code editor developed by Microsoft for Windows,\nLinux and macOS\n",
+      "install_id": "vscode",
+      "license": "Unfree",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=73cf49b8ad837ade2de76f87eb53fc85ed5d4680",
+      "name": "vscode-1.97.2",
+      "pname": "vscode",
+      "rev": "73cf49b8ad837ade2de76f87eb53fc85ed5d4680",
+      "rev_count": 755230,
+      "rev_date": "2025-02-18T08:17:47Z",
+      "scrape_date": "2025-02-20T02:25:42Z",
+      "stabilities": [
+        "stable",
+        "staging",
+        "unstable"
+      ],
+      "unfree": true,
+      "version": "1.97.2",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/lc7aslkkymb6sjvj323dcqw7xfjajjhp-vscode-1.97.2"
+      },
+      "system": "x86_64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "vscode",
+      "broken": false,
+      "derivation": "/nix/store/jfdcknrsr4wa3mfpvq1xgyl7c6m4p3mi-vscode-1.97.2.drv",
+      "description": "Open source source code editor developed by Microsoft for Windows,\nLinux and macOS\n",
+      "install_id": "vscode",
+      "license": "Unfree",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=73cf49b8ad837ade2de76f87eb53fc85ed5d4680",
+      "name": "vscode-1.97.2",
+      "pname": "vscode",
+      "rev": "73cf49b8ad837ade2de76f87eb53fc85ed5d4680",
+      "rev_count": 755230,
+      "rev_date": "2025-02-18T08:17:47Z",
+      "scrape_date": "2025-02-20T02:25:42Z",
+      "stabilities": [
+        "stable",
+        "staging",
+        "unstable"
+      ],
+      "unfree": true,
+      "version": "1.97.2",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/1wsgcydxm34rbg4n4cm7cy138y0jqvhp-vscode-1.97.2"
+      },
+      "system": "x86_64-linux",
       "group": "toplevel",
       "priority": 5
     },
@@ -1801,6 +2361,7 @@
       "rev_date": "2025-02-18T08:17:47Z",
       "scrape_date": "2025-02-20T02:25:42Z",
       "stabilities": [
+        "stable",
         "staging",
         "unstable"
       ],
@@ -1836,6 +2397,7 @@
       "rev_date": "2025-02-18T08:17:47Z",
       "scrape_date": "2025-02-20T02:25:42Z",
       "stabilities": [
+        "stable",
         "staging",
         "unstable"
       ],
@@ -1871,6 +2433,7 @@
       "rev_date": "2025-02-18T08:17:47Z",
       "scrape_date": "2025-02-20T02:25:42Z",
       "stabilities": [
+        "stable",
         "staging",
         "unstable"
       ],
@@ -1906,6 +2469,7 @@
       "rev_date": "2025-02-18T08:17:47Z",
       "scrape_date": "2025-02-20T02:25:42Z",
       "stabilities": [
+        "stable",
         "staging",
         "unstable"
       ],
