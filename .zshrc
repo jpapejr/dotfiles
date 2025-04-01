@@ -40,3 +40,6 @@
 # eval "$(direnv hook zsh)"
 eval "$(starship init zsh)"
 # eval "$(flox activate -d ~ -m run)"
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/jtp/.lmstudio/bin"
