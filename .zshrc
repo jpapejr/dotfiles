@@ -3,43 +3,29 @@
 
 
 # # Aliases
-# alias ic='ibmcloud'
-# #export KUBECONFIG=$(mktemp)
-# alias ic='ibmcloud'
-# alias iks='ibmcloud ks'
-# alias roks='ibmcloud oc'
-# alias vpc='ibmcloud is'
-# alias c='podman ps'
-# alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias c='podman ps'
+alias gi='gh issue'
+alias giv='gh issue view'
+alias givc='gh issue view -c'
+alias gic='gh issue comment'
+alias ls='exa'
 
 # export EDITOR=hx
 
-# autoload -U colors; colors
-# export KUBECONFIG=`mktemp`
-# #export ITERM_ENABLE_SHELL_INTEGRATION_WITH_TMUX=YES
-
-# # >>> conda initialize >>>
-# # !! Contents within this block are managed by 'conda init' !!
-# __conda_setup="$('/opt/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-# if [ $? -eq 0 ]; then
-#     eval "$__conda_setup"
-# else
-#     if [ -f "/opt/anaconda3/etc/profile.d/conda.sh" ]; then
-#         . "/opt/anaconda3/etc/profile.d/conda.sh"
-#     else
-#         export PATH="/opt/anaconda3/bin:$PATH"
-#     fi
-# fi
-# unset __conda_setup
-# # <<< conda initialize <<<
-
+autoload -U colors; colors
+#export ITERM_ENABLE_SHELL_INTEGRATION_WITH_TMUX=YES
 
 # # Created by `pipx` on 2025-01-06 21:55:38
 # export PATH="$PATH:/Users/jtp/.local/bin:/usr/local/bin"
 
-# eval "$(direnv hook zsh)"
 eval "$(starship init zsh)"
-# eval "$(flox activate -d ~ -m run)"
 
-# Added by LM Studio CLI (lms)
-export PATH="$PATH:/Users/jtp/.lmstudio/bin"
+export PATH="$PATH:/Users/jtp/.local/bin:/usr/local/bin"
+
+export HISTFILE=~/.zsh_history
+export SAVEHIST=1000
+setopt inc_append_history share_history
+
+GH_MDWIDTH="150"
+
