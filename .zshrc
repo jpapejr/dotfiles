@@ -9,7 +9,7 @@ alias gi='gh issue'
 alias giv='gh issue view'
 alias givc='gh issue view -c'
 alias gic='gh issue comment'
-alias ls='exa'
+#alias ls='exa'
 
 # export EDITOR=hx
 
