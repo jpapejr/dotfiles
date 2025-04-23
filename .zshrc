@@ -4,7 +4,13 @@
 
 # # Aliases
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-alias c='podman ps'
+alias c='podman ps -p'
+alias p='podman'
+alias pe='podman exec -it'
+alias pp='podman pod ps'
+alias pi='podman images'
+alias prmi="podman rmi"
+alias pprune="podman system prune"
 alias gi='gh issue'
 alias giv='gh issue view'
 alias givc='gh issue view -c'
