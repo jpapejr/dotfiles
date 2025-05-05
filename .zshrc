@@ -11,6 +11,7 @@ alias pp='podman pod ps'
 alias pi='podman images'
 alias prmi="podman rmi"
 alias pprune="podman system prune"
+alias pv="podman volume"
 alias gi='gh issue'
 alias giv='gh issue view'
 alias givc='gh issue view -c'
