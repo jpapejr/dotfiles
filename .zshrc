@@ -36,3 +36,26 @@ setopt inc_append_history share_history
 
 GH_MDWIDTH="150"
 
+# BEGIN ServBay Environment Block
+# ==============================================================
+# ATTENTION: This section is automatically generated and managed
+#            by the ServBay application to configure environment
+#            variables for its services (PHP, Node, DBs, etc.).
+#
+# DO NOT EDIT THIS BLOCK MANUALLY - YOUR CHANGES WILL BE LOST
+#            during Servbay updates or restarts.
+#
+# For support and documentation, please visit:
+# https://support.servbay.com
+#
+# If you encounter issues, try restarting your terminal or run
+# `source ~/.zshrc` (or `source ~/.bash_profile`).
+# ==============================================================
+#
+export PATH="/Applications/ServBay/script/alias:/Applications/ServBay/bin:/Applications/ServBay/sbin:/Applications/ServBay/script:/Applications/ServBay/package/python/current/Python.framework/Versions/Current/bin:/Applications/ServBay/package/node/current/bin:/Applications/ServBay/package/go/current/bin:/Applications/ServBay/package/openjdk/current/bin:/Applications/ServBay/package/rust/current/bin:/Applications/ServBay/package/ruby/current/bin:/Applications/ServBay/package/dotnetsdk/current:/Applications/ServBay/package/dotnetsdk/current/tools:$HOME/.dotnet/tools/Applications/ServBay/package/mono/current:$PATH"
+### OpenJDK(Java) Environment added by ServBay
+export JAVA_HOME="/Applications/ServBay/package/openjdk/current.sdk/Contents/Home"
+export CLASS_PATH="$JAVA_HOME/lib"
+### PostgreSQL Environment added by ServBay
+export PGHOST="/Applications/ServBay/tmp"
+# END ServBay Environment Block
