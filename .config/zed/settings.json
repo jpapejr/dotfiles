@@ -8,13 +8,38 @@
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
   "agent": {
+    "play_sound_when_agent_done": true,
+    "profiles": {
+      "minimal": {
+        "name": "Minimal",
+        "tools": {
+          "delete_path": false,
+          "create_directory": false,
+          "copy_path": false,
+          "list_directory": false,
+          "edit_file": false
+        },
+        "enable_all_context_servers": false,
+        "context_servers": {}
+      }
+    },
     "always_allow_tool_actions": true,
     "model_parameters": [],
     "default_model": {
-      "provider": "ollama",
-      "model": "qwen3:latest"
+      "provider": "openai",
+      "model": "Qwen2.5-Coder-14B-Instruct"
     },
     "version": "2"
+  },
+  "context_servers": {
+    "terraform-mcp-server": {
+      "source": "custom",
+      "command": {
+        "path": "podman",
+        "args": ["run", "-i", "--rm", "hashicorp/terraform-mcp-server"],
+        "env": {}
+      }
+    }
   },
   "ui_font_size": 15,
   "buffer_font_size": 15,
@@ -24,11 +49,28 @@
     "dark": "Catppuccin Macchiato"
   },
   "language_models": {
-    "ollama": {
-      "api_url": "http://localhost:11434"
+    "openai": {
+      "version": "1",
+      "api_url": "http://localhost:11434/v1",
+      "low_speed_timeout_in_seconds": 600,
+      "available_models": [
+        {
+          "name": "DeepSeek-R1-0528-Qwen3-8B",
+          "display_name": "DeepSeek R1 Qwen3 8B",
+          "max_tokens": 32768
+        },
+        {
+          "name": "Qwen2.5-Coder-14B-Instruct",
+          "display_name": "Qwen2.5-Coder-14B-Instruct",
+          "max_tokens": 26000
+        }
+      ]
     }
   },
   "terminal": {
     "font_family": "JetBrainsMono Nerd Font"
+  },
+  "tabs": {
+    "close_position": "left"
   }
 }
