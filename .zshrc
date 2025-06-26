@@ -17,6 +17,7 @@ alias giv='gh issue view'
 alias givc='gh issue view -c'
 alias gic='gh issue comment'
 #alias ls='exa'
+alias fabric='fabric-ai'
 
 # export EDITOR=hx
 

@@ -7,7 +7,9 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "icon_theme": "Catppuccin Macchiato",
   "agent": {
+    "default_profile": "ask",
     "play_sound_when_agent_done": true,
     "profiles": {
       "minimal": {
@@ -35,8 +37,17 @@
     "terraform-mcp-server": {
       "source": "custom",
       "command": {
-        "path": "podman",
-        "args": ["run", "-i", "--rm", "hashicorp/terraform-mcp-server"],
+        // "path": "podman",
+        // "args": ["run", "-i", "--rm", "hashicorp/terraform-mcp-server"],
+        "path": "container",
+        "args": [
+          "run",
+          "-i",
+          "--rm",
+          "--dns",
+          "8.8.8.8",
+          "hashicorp/terraform-mcp-server"
+        ],
         "env": {}
       }
     }
@@ -72,5 +83,6 @@
   },
   "tabs": {
     "close_position": "left"
-  }
+  },
+  "restore_on_startup": "none"
 }
