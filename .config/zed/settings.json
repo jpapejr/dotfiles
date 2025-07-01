@@ -37,17 +37,8 @@
     "terraform-mcp-server": {
       "source": "custom",
       "command": {
-        // "path": "podman",
-        // "args": ["run", "-i", "--rm", "hashicorp/terraform-mcp-server"],
-        "path": "container",
-        "args": [
-          "run",
-          "-i",
-          "--rm",
-          "--dns",
-          "8.8.8.8",
-          "hashicorp/terraform-mcp-server"
-        ],
+        "path": "podman",
+        "args": ["run", "-i", "--rm", "hashicorp/terraform-mcp-server"],
         "env": {}
       }
     }
