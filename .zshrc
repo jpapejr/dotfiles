@@ -27,7 +27,8 @@ export HISTFILE=~/.zsh_history
 export SAVEHIST=1000
 setopt inc_append_history share_history
 
-GH_MDWIDTH="150"
+GH_MDWIDT="150"
+export TMUXAI_OPENROUTER_API_KEY="no-key"
 
 
 ### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
