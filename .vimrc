@@ -1,0 +1,2 @@
+syntax on
+colorscheme catppuccin_macchiato
