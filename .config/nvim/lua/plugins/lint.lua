@@ -1,11 +1,10 @@
+-- ~/.config/nvim/lua/plugins/lint.lua
 return {
   {
     "mfussenegger/nvim-lint",
     opts = {
-      linters = {
-        ["markdownlint-cli2"] = {
-          args = { "--config", "/home/jtp/.markdownlint-cli2.yaml", "--" },
-        },
+      linters_by_ft = {
+        markdown = {}, -- disables markdownlint
       },
     },
   },
