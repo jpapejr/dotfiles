@@ -11,6 +11,7 @@ alias gic='gh issue comment'
 #alias ls='exa'
 alias o='ollama'
 alias vim='nvim'
+alias lz='lazygit'
 
 # export EDITOR=hx
 
@@ -66,4 +67,3 @@ unset __mamba_setup
 # Added by LM Studio CLI (lms)
 export PATH="$PATH:/Users/jtp/.lmstudio/bin"
 # End of LM Studio CLI section
-
