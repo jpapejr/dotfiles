@@ -35,34 +35,6 @@ GH_MDWIDT="150"
 export PATH="/Users/jtp/.rd/bin:$PATH"
 ### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
 
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/Users/jtp/miniforge3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/Users/jtp/miniforge3/etc/profile.d/conda.sh" ]; then
-        . "/Users/jtp/miniforge3/etc/profile.d/conda.sh"
-    else
-        export PATH="/Users/jtp/miniforge3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
-
-
-# >>> mamba initialize >>>
-# !! Contents within this block are managed by 'mamba shell init' !!
-export MAMBA_EXE='/Users/jtp/miniforge3/bin/mamba';
-export MAMBA_ROOT_PREFIX='/Users/jtp/miniforge3';
-__mamba_setup="$("$MAMBA_EXE" shell hook --shell zsh --root-prefix "$MAMBA_ROOT_PREFIX" 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__mamba_setup"
-else
-    alias mamba="$MAMBA_EXE"  # Fallback on help from mamba activate
-fi
-unset __mamba_setup
-# <<< mamba initialize <<<
 
 # Added by LM Studio CLI (lms)
 export PATH="$PATH:/Users/jtp/.lmstudio/bin"
