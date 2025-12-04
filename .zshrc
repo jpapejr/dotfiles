@@ -24,6 +24,7 @@ autoload -U colors; colors
 eval "$(starship init zsh)"
 
 export PATH="$PATH:/Users/jtp/.local/bin:/usr/local/bin:/Users/jtp/go/bin:/Users/jtp/.cargo/bin"
+export QDRANT_URL=http://qdrant.orb.local:6333
 
 export HISTFILE=~/.zsh_history
 export SAVEHIST=1000
@@ -32,10 +33,11 @@ setopt inc_append_history share_history
 GH_MDWIDT="150"
 
 ### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
-export PATH="/Users/jtp/.rd/bin:$PATH"
+# export PATH="/Users/jtp/.rd/bin:$PATH"
 ### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
 
 
 # Added by LM Studio CLI (lms)
 export PATH="$PATH:/Users/jtp/.lmstudio/bin"
 # End of LM Studio CLI section
+
