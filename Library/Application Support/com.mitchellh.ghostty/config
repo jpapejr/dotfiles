@@ -53,3 +53,5 @@ custom-shader = ./shaders/cursor_frozen.glsl
 
 window-width = 200
 window-height = 60
+
+key-backspace=backspace

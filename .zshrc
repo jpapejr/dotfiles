@@ -12,6 +12,7 @@ alias gic='gh issue comment'
 alias o='ollama'
 alias vim='nvim'
 alias lz='lazygit'
+alias para='cd ~/para'
 
 # export EDITOR=hx
 
@@ -25,6 +26,8 @@ eval "$(starship init zsh)"
 
 export PATH="$PATH:/Users/jtp/.local/bin:/usr/local/bin:/Users/jtp/go/bin:/Users/jtp/.cargo/bin"
 export QDRANT_URL=https://qdrant.orb.local
+export PARA_PROJ="$HOME/para/1_projects/em-delivery"
+export PARA_RES="$HOME/para/3_resources"
 
 export HISTFILE=~/.zsh_history
 export SAVEHIST=1000
