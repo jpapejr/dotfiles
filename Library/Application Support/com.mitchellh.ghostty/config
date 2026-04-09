@@ -54,4 +54,5 @@ custom-shader = ./shaders/cursor_frozen.glsl
 window-width = 200
 window-height = 60
 
-key-backspace=backspace
+shell-integration-features = ssh-terminfo
+shell-integration-features = ssh-env

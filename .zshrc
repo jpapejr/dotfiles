@@ -12,9 +12,13 @@ alias gic='gh issue comment'
 alias o='ollama'
 alias vim='nvim'
 alias lz='lazygit'
-alias para='cd ~/para'
+#alias orchestrate='cd /Users/jtp/Library/CloudStorage/OneDrive-IBM/Documents/Resources/wxo && uv run orchestrate'
 
 # export EDITOR=hx
+
+export ANTHROPIC_BASE_URL="http://alpaca.dev.fyre.ibm.com:11434"
+export ANTHROPIC_AUTH_TOKEN="ollama"  # Required but ignored by Ollama
+
 
 autoload -U colors; colors
 #export ITERM_ENABLE_SHELL_INTEGRATION_WITH_TMUX=YES
@@ -25,9 +29,6 @@ autoload -U colors; colors
 eval "$(starship init zsh)"
 
 export PATH="$PATH:/Users/jtp/.local/bin:/usr/local/bin:/Users/jtp/go/bin:/Users/jtp/.cargo/bin"
-export QDRANT_URL=https://qdrant.orb.local
-export PARA_PROJ="$HOME/para/1_projects/em-delivery"
-export PARA_RES="$HOME/para/3_resources"
 
 export HISTFILE=~/.zsh_history
 export SAVEHIST=1000
@@ -48,3 +49,4 @@ export PATH="$PATH:/Users/jtp/.lmstudio/bin"
 #   export NVM_DIR="$HOME/.nvm"                                                                                                                                                               
   [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm                                                                                              
   [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+. "/Users/jtp/.acme.sh/acme.sh.env"
