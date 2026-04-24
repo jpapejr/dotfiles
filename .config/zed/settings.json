@@ -7,73 +7,76 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "agent_servers": {
+    "cline": {
+      "type": "registry"
+    }
+  },
   "icon_theme": "Catppuccin Macchiato",
   "agent": {
-    "default_profile": "ask",
-    "play_sound_when_agent_done": true,
     "profiles": {
-      "minimal": {
-        "name": "Minimal",
-        "tools": {
-          "delete_path": false,
-          "create_directory": false,
-          "copy_path": false,
-          "list_directory": false,
-          "edit_file": false
-        },
-        "enable_all_context_servers": false,
-        "context_servers": {}
-      }
+      
     },
-    "always_allow_tool_actions": true,
-    "model_parameters": [],
+    "inline_assistant_model": {
+      "provider": "IBM Consulting Advantage",
+      "model": "global/anthropic.claude-sonnet-4-5-20250929-v1:0",
+      "enable_thinking": false
+    },
     "default_model": {
-      "provider": "openai",
-      "model": "Qwen2.5-Coder-14B-Instruct"
+      "provider": "IBM Consulting Advantage",
+      "model": "global/anthropic.claude-sonnet-4-5-20250929-v1:0",
+      "enable_thinking": false,
     },
-    "version": "2"
+    "favorite_models": [],
+    "model_parameters": [],
   },
   "context_servers": {
-    "terraform-mcp-server": {
-      "source": "custom",
-      "command": {
-        "path": "podman",
-        "args": ["run", "-i", "--rm", "hashicorp/terraform-mcp-server"],
-        "env": {}
-      }
-    }
+    "mcpact": {
+      "enabled": true,
+      "remote": false,
+      "command": "node",
+      "args": [
+        "/Users/jtp/Downloads/GitHub/mcpact/dist/src/index.js",
+        "--config",
+        "/Users/jtp/Downloads/GitHub/mcpact/mcpact.config.json",
+      ],
+      "env": {},
+    },
   },
   "ui_font_size": 15,
   "buffer_font_size": 15,
   "theme": {
-    "mode": "system",
-    "light": "Catppuccin Macchiato",
-    "dark": "Catppuccin Macchiato"
+    "mode": "dark",
+    "light": "One Light",
+    "dark": "Catppuccin Macchiato",
   },
   "language_models": {
-    "openai": {
-      "version": "1",
-      "api_url": "https://llama-cpp.apps.internal/v1",
-      "low_speed_timeout_in_seconds": 600,
-      "available_models": [
-        {
-          "name": "DeepSeek-R1-0528-Qwen3-8B",
-          "display_name": "DeepSeek R1 Qwen3 8B",
-          "max_tokens": 32768
-        },
-        {
-          "name": "Qwen2.5-Coder-14B-Instruct",
-          "display_name": "Qwen2.5-Coder-14B-Instruct",
-          "max_tokens": 26000
-        }
-      ]
-    }
+    "openai_compatible": {
+      "IBM Consulting Advantage": {
+        "api_url": "https://servicesessentials.ibm.com/apis/v3",
+        "available_models": [
+          {
+            "name": "global/anthropic.claude-sonnet-4-5-20250929-v1:0",
+            "max_tokens": 200000,
+            "max_output_tokens": 32000,
+            "max_completion_tokens": 200000,
+            "capabilities": {
+              "tools": true,
+              "images": false,
+              "parallel_tool_calls": false,
+              "prompt_cache_key": false,
+              "chat_completions": true,
+            },
+          },
+        ],
+      },
+    },
   },
   "terminal": {
-    "font_family": "JetBrainsMono Nerd Font"
+    "font_family": "JetBrainsMono Nerd Font",
   },
   "tabs": {
-    "close_position": "left"
+    "close_position": "left",
   },
-  "restore_on_startup": "none"
+  "restore_on_startup": "none",
 }

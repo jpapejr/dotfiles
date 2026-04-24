@@ -16,9 +16,6 @@ alias lz='lazygit'
 
 # export EDITOR=hx
 
-export ANTHROPIC_BASE_URL="http://alpaca.dev.fyre.ibm.com:11434"
-export ANTHROPIC_AUTH_TOKEN="ollama"  # Required but ignored by Ollama
-
 
 autoload -U colors; colors
 #export ITERM_ENABLE_SHELL_INTEGRATION_WITH_TMUX=YES
@@ -28,7 +25,7 @@ autoload -U colors; colors
 
 eval "$(starship init zsh)"
 
-export PATH="$PATH:/Users/jtp/.local/bin:/usr/local/bin:/Users/jtp/go/bin:/Users/jtp/.cargo/bin"
+export PATH="$PATH:/Users/jtp/.local/bin:/usr/local/bin:/Users/jtp/go/bin:/Users/jtp/.cargo/bin:/Applications/PyCharm.app/Contents/MacOS"
 
 export HISTFILE=~/.zsh_history
 export SAVEHIST=1000
