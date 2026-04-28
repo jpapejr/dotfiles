@@ -1,0 +1,11 @@
+services:
+  "github.ibm.com": "github:github.ibm.com"
+customCommands:
+  - key: "C"
+    command: "gh pr checkout {{index .PromptResponses 0}}"
+    context: "localBranches"
+    description: "checkout a pull request"
+    prompts:
+      - type: "input"
+        title: "PR Number"
+        initialValue: ""
