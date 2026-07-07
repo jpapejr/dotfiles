@@ -12,9 +12,13 @@ alias gic='gh issue comment'
 alias o='ollama'
 alias vim='nvim'
 alias lz='lazygit'
-#alias orchestrate='cd /Users/jtp/Library/CloudStorage/OneDrive-IBM/Documents/Resources/wxo && uv run orchestrate'
+alias orchestrate='uvx --from ibm-watsonx-orchestrate orchestrate'
+alias ibmfiles='/usr/bin/git --git-dir=$HOME/ibm_data/.git --work-tree=$HOME/ibm_data'
+alias c='container'
+alias cmd='cmux markdown open'
 
-# export EDITOR=hx
+
+export GPG_TTY=$(tty)
 
 
 autoload -U colors; colors
@@ -33,17 +37,125 @@ setopt inc_append_history share_history
 
 GH_MDWIDT="150"
 
-### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
-export PATH="/Users/jtp/.rd/bin:$PATH"
-### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
 
-
-# Added by LM Studio CLI (lms)
-export PATH="$PATH:/Users/jtp/.lmstudio/bin"
-# End of LM Studio CLI section
-#
 #
 #   export NVM_DIR="$HOME/.nvm"                                                                                                                                                               
   [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm                                                                                              
   [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 . "/Users/jtp/.acme.sh/acme.sh.env"
+
+# bun completions
+[ -s "/Users/jtp/.bun/_bun" ] && source "/Users/jtp/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+fpath+=~/.zfunc; autoload -Uz compinit; compinit
+
+zstyle ':completion:*' menu select
+
+
+b() {
+  cd 
+  local start end elapsed rc
+  local mode="${1:-ask}"
+  local workspace="$2"
+
+  shift 2
+
+  start=$(date +%s)
+
+  P="$*"
+
+  P="${P//\'/\\\'}"   # escape '
+  P="${P//\"/\\\"}"   # escape "
+
+  #container run --dns 8.8.8.8 -it --rm \
+  #  --env-file "$HOME/.bob/harness.env" \
+  #  -v "$HOME/.bob:/root/.bob" \
+  #  -v "$PWD:/workspace" \
+  #  bob_harness:v1.0.6 \
+  #  bob --chat-mode "$mode" --yolo --accept-license \
+  #    --hide-intermediary-output \
+  #    -p $PROMPT | glow -
+  shuru run \
+  --from bob-shell \
+  --allow-net \
+  --allow-host-writes \
+  --mount $HOME/.bob:/root/.bob \
+  --mount $workspace:/workspace \
+  -- sh -c "cd /workspace && bob --yolo --hide-intermediary-output --accept-license --chat-mode $mode $P" | bat --language markdown --pp
+
+  rc=${PIPESTATUS[0]}
+
+  end=$(date +%s)
+  elapsed=$((end - start))
+
+  osascript \
+  -e 'beep' \
+  -e "display notification \"AI job completed (${elapsed}s)\" with title \"Terminal\"" \
+  >/dev/null 2>&1
+
+  printf '\n\nElapsed time: %ss\n' "$elapsed"
+
+
+  return $rc
+}
+
+
+
+bv() {
+  cd 
+  local start end elapsed rc
+  local mode="${1:-ask}"
+  local workspace="$2"
+
+  shift 2
+
+  start=$(date +%s)
+
+  P="$*"
+
+  P="${P//\'/\\\'}"   # escape '
+  P="${P//\"/\\\"}"   # escape "
+
+  #container run --dns 8.8.8.8 -it --rm \
+  #  --env-file "$HOME/.bob/harness.env" \
+  #  -v "$HOME/.bob:/root/.bob" \
+  #  -v "$PWD:/workspace" \
+  #  bob_harness:v1.0.6 \
+  #  bob --chat-mode "$mode" --yolo --accept-license \
+  #    --hide-intermediary-output \
+  #    -p $PROMPT | glow -
+  shuru run \
+  --from bob-shell \
+  --allow-net \
+  --allow-host-writes \
+  --mount $HOME/.bob:/root/.bob \
+  --mount $workspace:/workspace \
+  -- sh -c "cd /workspace && bob --yolo --accept-license --chat-mode $mode $P" | bat --language markdown --pp
+
+  rc=${PIPESTATUS[0]}
+
+  end=$(date +%s)
+  elapsed=$((end - start))
+
+  osascript \
+  -e 'beep' \
+  -e "display notification \"AI job completed (${elapsed}s)\" with title \"Terminal\"" \
+  >/dev/null 2>&1
+
+  printf '\n\nElapsed time: %ss\n' "$elapsed"
+
+
+  return $rc
+}
+
+
+bmodes() {
+  bob --help 2>&1 |
+  sed -n '/--chat-mode/,/^[[:space:]]*--/p' |
+  grep -Eo '"[^"]+"' |
+  tr -d '"'
+}
