@@ -83,9 +83,9 @@ b() {
   --from bob-shell \
   --allow-net \
   --allow-host-writes \
-  --mount $HOME/.bob:/root/.bob \
+  --mount $HOME/.bob:/.bob \
   --mount $workspace:/workspace \
-  -- sh -c "cd /workspace && bob --yolo --hide-intermediary-output --accept-license --chat-mode $mode $P" | bat --language markdown --pp
+  -- sh -c "cd /workspace && bob --yolo --hide-intermediary-output --accept-license --chat-mode $mode $P" | bat --language markdown -pp
 
   rc=${PIPESTATUS[0]}
 
@@ -132,9 +132,9 @@ bv() {
   --from bob-shell \
   --allow-net \
   --allow-host-writes \
-  --mount $HOME/.bob:/root/.bob \
+  --mount $HOME/.bob:/.bob \
   --mount $workspace:/workspace \
-  -- sh -c "cd /workspace && bob --yolo --accept-license --chat-mode $mode $P" | bat --language markdown --pp
+  -- sh -c "cd /workspace && bob --yolo --accept-license --chat-mode $mode $P" | bat --language markdown -pp 
 
   rc=${PIPESTATUS[0]}
 
@@ -158,4 +158,18 @@ bmodes() {
   sed -n '/--chat-mode/,/^[[:space:]]*--/p' |
   grep -Eo '"[^"]+"' |
   tr -d '"'
+}
+
+
+bcoins() {
+  local api_key
+
+  read -rs "api_key?Enter Bob API Key: "
+  echo
+
+  curl -sSL \
+    -H "Authorization: Apikey $api_key" \
+    https://api.us-east.bob.ibm.com/admin/v1/profile \
+    | jq -r '.instances[].teams[] |
+      "💰 \(.usage | round)/\(.budget_limit) (\((.budget_limit - .usage) / .budget_limit * 100 | round)%)"'
 }
