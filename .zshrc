@@ -15,7 +15,8 @@ alias lz='lazygit'
 alias orchestrate='uvx --from ibm-watsonx-orchestrate orchestrate'
 alias ibmfiles='/usr/bin/git --git-dir=$HOME/ibm_data/.git --work-tree=$HOME/ibm_data'
 alias c='container'
-alias cmd='cmux markdown open'
+alias ai='bob2 run'
+alias cai='c run -i --dns 8.8.8.8 -v $PWD:/workspace:rw --env-file ~/.bob/harness.env bob-shell2:v1.0.0'
 
 
 export GPG_TTY=$(tty)
@@ -27,7 +28,15 @@ autoload -U colors; colors
 # # Created by `pipx` on 2025-01-06 21:55:38
 # export PATH="$PATH:/Users/jtp/.local/bin:/usr/local/bin"
 
+# Starship
 eval "$(starship init zsh)"
+
+# fzf key bindings and completion
+source <(fzf --zsh)
+
+# Inline command suggestions
+source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
 
 export PATH="$PATH:/Users/jtp/.local/bin:/usr/local/bin:/Users/jtp/go/bin:/Users/jtp/.cargo/bin:/Applications/PyCharm.app/Contents/MacOS"
 
@@ -56,112 +65,7 @@ fpath+=~/.zfunc; autoload -Uz compinit; compinit
 zstyle ':completion:*' menu select
 
 
-b() {
-  cd 
-  local start end elapsed rc
-  local mode="${1:-ask}"
-  local workspace="$2"
-
-  shift 2
-
-  start=$(date +%s)
-
-  P="$*"
-
-  P="${P//\'/\\\'}"   # escape '
-  P="${P//\"/\\\"}"   # escape "
-
-  #container run --dns 8.8.8.8 -it --rm \
-  #  --env-file "$HOME/.bob/harness.env" \
-  #  -v "$HOME/.bob:/root/.bob" \
-  #  -v "$PWD:/workspace" \
-  #  bob_harness:v1.0.6 \
-  #  bob --chat-mode "$mode" --yolo --accept-license \
-  #    --hide-intermediary-output \
-  #    -p $PROMPT | glow -
-  shuru run \
-  --from bob-shell \
-  --allow-net \
-  --allow-host-writes \
-  --mount $HOME/.bob:/.bob \
-  --mount $workspace:/workspace \
-  -- sh -c "cd /workspace && bob --yolo --hide-intermediary-output --accept-license --chat-mode $mode $P" | bat --language markdown -pp
-
-  rc=${PIPESTATUS[0]}
-
-  end=$(date +%s)
-  elapsed=$((end - start))
-
-  osascript \
-  -e 'beep' \
-  -e "display notification \"AI job completed (${elapsed}s)\" with title \"Terminal\"" \
-  >/dev/null 2>&1
-
-  printf '\n\nElapsed time: %ss\n' "$elapsed"
-
-
-  return $rc
-}
-
-
-
-bv() {
-  cd 
-  local start end elapsed rc
-  local mode="${1:-ask}"
-  local workspace="$2"
-
-  shift 2
-
-  start=$(date +%s)
-
-  P="$*"
-
-  P="${P//\'/\\\'}"   # escape '
-  P="${P//\"/\\\"}"   # escape "
-
-  #container run --dns 8.8.8.8 -it --rm \
-  #  --env-file "$HOME/.bob/harness.env" \
-  #  -v "$HOME/.bob:/root/.bob" \
-  #  -v "$PWD:/workspace" \
-  #  bob_harness:v1.0.6 \
-  #  bob --chat-mode "$mode" --yolo --accept-license \
-  #    --hide-intermediary-output \
-  #    -p $PROMPT | glow -
-  shuru run \
-  --from bob-shell \
-  --allow-net \
-  --allow-host-writes \
-  --mount $HOME/.bob:/.bob \
-  --mount $workspace:/workspace \
-  -- sh -c "cd /workspace && bob --yolo --accept-license --chat-mode $mode $P" | bat --language markdown -pp 
-
-  rc=${PIPESTATUS[0]}
-
-  end=$(date +%s)
-  elapsed=$((end - start))
-
-  osascript \
-  -e 'beep' \
-  -e "display notification \"AI job completed (${elapsed}s)\" with title \"Terminal\"" \
-  >/dev/null 2>&1
-
-  printf '\n\nElapsed time: %ss\n' "$elapsed"
-
-
-  return $rc
-}
-
-
-bmodes() {
-  bob --help 2>&1 |
-  sed -n '/--chat-mode/,/^[[:space:]]*--/p' |
-  grep -Eo '"[^"]+"' |
-  tr -d '"'
-}
-
-
-bcoins() {
+bobcoins() {
   local api_key
 
   read -rs "api_key?Enter Bob API Key: "
