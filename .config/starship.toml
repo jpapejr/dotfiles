@@ -4,3 +4,17 @@
 format = '[$env_value]($style)'
 default = 'none'
 style='green bold'
+
+[custom.vpn]
+description = "Cisco Secure Client VPN connected state (fast route check)"
+command = """
+  if netstat -rn 2>/dev/null | grep -q "0/1.*utun"; then
+    echo "🔒 VPN"
+  else
+    echo "🔓 VPN"
+  fi
+"""
+when = true
+shell = ['zsh', '-s']
+format = '[$output]($style) '
+style = 'bold green'

@@ -16,13 +16,15 @@ alias orchestrate='uvx --from ibm-watsonx-orchestrate orchestrate'
 alias ibmfiles='/usr/bin/git --git-dir=$HOME/ibm_data/.git --work-tree=$HOME/ibm_data'
 alias c='container'
 alias ai='bob2 run'
-alias cai='c run -i --dns 8.8.8.8 -v $PWD:/workspace:rw --env-file ~/.bob/harness.env bob-shell2:v1.0.0'
+alias cai='c run -i --dns 8.8.8.8 -v $PWD:/workspace:rw --env-file ~/.bob/harness.env bob-shell2:v1.1.0'
 
 
 export GPG_TTY=$(tty)
 
 
 autoload -U colors; colors
+autoload -Uz edit-command-line
+zle -N edit-command-line
 #export ITERM_ENABLE_SHELL_INTEGRATION_WITH_TMUX=YES
 
 # # Created by `pipx` on 2025-01-06 21:55:38
@@ -36,6 +38,7 @@ source <(fzf --zsh)
 
 # Inline command suggestions
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
 
 
 export PATH="$PATH:/Users/jtp/.local/bin:/usr/local/bin:/Users/jtp/go/bin:/Users/jtp/.cargo/bin:/Applications/PyCharm.app/Contents/MacOS"
