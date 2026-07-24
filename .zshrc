@@ -17,9 +17,11 @@ alias ibmfiles='/usr/bin/git --git-dir=$HOME/ibm_data/.git --work-tree=$HOME/ibm
 alias c='container'
 alias ai='bob2 run'
 alias cai='c run -i --dns 8.8.8.8 -v $PWD:/workspace:rw --env-file ~/.bob/harness.env bob-shell2:v1.1.0'
-
+alias vpn='/opt/cisco/secureclient/bin/vpn'
 
 export GPG_TTY=$(tty)
+export USA-FAST='AMERICA-FAST (macOS)'
+export USE='AMERICA (macOS)'
 
 
 autoload -U colors; colors
