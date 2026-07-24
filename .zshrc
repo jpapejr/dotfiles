@@ -20,8 +20,8 @@ alias cai='c run -i --dns 8.8.8.8 -v $PWD:/workspace:rw --env-file ~/.bob/harnes
 alias vpn='/opt/cisco/secureclient/bin/vpn'
 
 export GPG_TTY=$(tty)
-export USA-FAST='AMERICA-FAST (macOS)'
-export USE='AMERICA (macOS)'
+export USA_FAST='AMERICA-FAST (macOS)'
+export USA='AMERICA (macOS)'
 
 
 autoload -U colors; colors
