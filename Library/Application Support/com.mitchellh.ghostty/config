@@ -56,3 +56,9 @@ window-height = 60
 
 shell-integration-features = ssh-terminfo
 shell-integration-features = ssh-env
+
+keybind = super+grave_accent=toggle_quick_terminal
+
+# Oh-my-pi
+keybind = alt+backspace=text:\x1b\x7f
+keybind = shift+enter=text:\n

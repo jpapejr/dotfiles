@@ -23,6 +23,7 @@ export GPG_TTY=$(tty)
 export USA_FAST='AMERICA-FAST (macOS)'
 export USA='AMERICA (macOS)'
 
+export BOB_API_KEY=bob_prod_bob-apikey_4BoXZPUrZUWfrmN6YkSMQMi9WXHSWuTDU6RUQM3ZQu3Q24vjtH5gXsDwbQipwNybwQofuT19amAfepVVVHGjuvci_B9ma3RMTBh3XNSzQmW5gf7fJ8M83dvGm4WF1nNqYyXHj
 
 autoload -U colors; colors
 autoload -Uz edit-command-line
@@ -34,6 +35,9 @@ zle -N edit-command-line
 
 # Starship
 eval "$(starship init zsh)"
+
+# Oh-my-Pi
+eval "$(omp completions zsh)"
 
 # fzf key bindings and completion
 source <(fzf --zsh)
@@ -82,3 +86,7 @@ bobcoins() {
     | jq -r '.instances[].teams[] |
       "💰 \(.usage | round)/\(.budget_limit) (\((.budget_limit - .usage) / .budget_limit * 100 | round)%)"'
 }
+
+### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
+export PATH="/Users/jtp/.rd/bin:$PATH"
+### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
