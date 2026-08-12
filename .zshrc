@@ -33,19 +33,6 @@ zle -N edit-command-line
 # # Created by `pipx` on 2025-01-06 21:55:38
 # export PATH="$PATH:/Users/jtp/.local/bin:/usr/local/bin"
 
-# Starship
-eval "$(starship init zsh)"
-
-# Oh-my-Pi
-eval "$(omp completions zsh)"
-
-# fzf key bindings and completion
-source <(fzf --zsh)
-
-# Inline command suggestions
-source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-
-
 
 export PATH="$PATH:/Users/jtp/.local/bin:/usr/local/bin:/Users/jtp/go/bin:/Users/jtp/.cargo/bin:/Applications/PyCharm.app/Contents/MacOS"
 
@@ -70,6 +57,18 @@ export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
 fpath+=~/.zfunc; autoload -Uz compinit; compinit
+
+# Starship
+eval "$(starship init zsh)"
+
+# Oh-my-Pi
+eval "$(omp completions zsh)"
+
+# fzf key bindings and completion
+source <(fzf --zsh)
+
+# Inline command suggestions
+source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 zstyle ':completion:*' menu select
 
